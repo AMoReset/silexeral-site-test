@@ -1,0 +1,2989 @@
+{
+  "currency" : {
+    "base" : "USD",
+    "display" : [
+      "USD",
+      "EUR",
+      "GBP",
+      "CAD",
+      "AUD"
+    ],
+    "fxMargin" : 0.040000000000000001,
+    "rates" : {
+      "AUD" : 1.4490000000000001,
+      "CAD" : 1.4179999999999999,
+      "EUR" : 0.877,
+      "GBP" : 0.75700000000000001,
+      "USD" : 1
+    },
+    "symbols" : {
+      "AUD" : "A$",
+      "CAD" : "C$",
+      "EUR" : "€",
+      "GBP" : "£",
+      "USD" : "$"
+    }
+  },
+  "generated" : "2026-09-27",
+  "languages" : [
+    "en"
+  ],
+  "payment" : {
+    "paypalClientId" : "Ad_YYKBbI5F80ANz0Ui5JcZMuMHEBpYW-FKejVIBWZGoR3CKFyd7I2bbmnd0MD_NZLu9Y-XQ9Afr1mp2"
+  },
+  "products" : [
+    {
+      "category" : "Pendant",
+      "effort" : 3,
+      "name" : {
+        "en" : "14mm natural black pearl, 18k gold clasp, round, minor inclusions"
+      },
+      "new" : true,
+      "options" : [
+
+      ],
+      "photos" : [
+        "1.jpg",
+        "2.jpg",
+        "3.jpg",
+        "4.jpg",
+        "5.jpg",
+        "6.jpg",
+        "7.jpg",
+        "8.jpg"
+      ],
+      "price" : {
+        "USD" : 389
+      },
+      "sku" : "SLX-PD-2608-05",
+      "slug" : "14mm-natural-black-pearl-18k-gold-clasp-round-minor-inclusions",
+      "specs" : [
+        {
+          "label" : {
+            "en" : "Pearl type"
+          },
+          "value" : {
+            "en" : "Seawater pearl"
+          }
+        },
+        {
+          "label" : {
+            "en" : "Pearl size"
+          },
+          "value" : {
+            "en" : "14mm"
+          }
+        },
+        {
+          "label" : {
+            "en" : "Pearl colour"
+          },
+          "value" : {
+            "en" : "Black"
+          }
+        },
+        {
+          "label" : {
+            "en" : "Accessory material"
+          },
+          "value" : {
+            "en" : "18k gold"
+          }
+        }
+      ],
+      "status" : "available",
+      "story" : {
+        "en" : "14mm natural black pearl, round and full, like a drop of ink jade condensed from the deep sea. Its surface is warm and understated, revealing a faint iridescent sheen under light. A tiny natural blemish on the back, a mark of nature's signature, telling a story of an irreplaceable journey. Held by an 18k gold clasp, strength meets softness — 14mm of presence, weight, and roundness. Suspended at the neckline, it draws the eye to pause: quiet power, refined grace. Wear it — one exquisite round pearl, a perfect match, a perfect gift."
+      },
+      "tags" : [
+        "black pearl",
+        "18k gold clasp",
+        "handmade silver",
+        "organic elegance",
+        "minimalist luxury",
+        "deep charcoal",
+        "warm gold",
+        "matte silver"
+      ]
+    },
+    {
+      "category" : "Ring",
+      "effort" : 4,
+      "name" : {
+        "en" : "Asymetric ellipse"
+      },
+      "new" : true,
+      "options" : [
+
+      ],
+      "photos" : [
+        "1.jpg",
+        "2.jpg",
+        "3.jpg",
+        "6.jpg",
+        "7.jpg",
+        "8.jpg",
+        "9.jpg",
+        "10.jpg"
+      ],
+      "price" : {
+        "USD" : 99
+      },
+      "sku" : "SLX-RG-2606-01",
+      "slug" : "asymetric-ellipse",
+      "specs" : [
+        {
+          "label" : {
+            "en" : "Ring size"
+          },
+          "value" : {
+            "en" : "5"
+          }
+        },
+        {
+          "label" : {
+            "en" : "Material"
+          },
+          "value" : {
+            "en" : "Ag999"
+          }
+        },
+        {
+          "label" : {
+            "en" : "Weight"
+          },
+          "value" : {
+            "en" : "9g"
+          }
+        }
+      ],
+      "status" : "available",
+      "story" : {
+        "en" : "Hand-forged from 9g of Ag999 pure silver, its asymmetric oval silhouette is like solidified liquid light—rounded, curved, and uniquely shaped. Perfect worn alone, even better stacked in pairs. Customizable sizing, with a subtle curve that sits just right against the base of the finger—an understated yet impossible-to-ignore presence."
+      },
+      "tags" : [
+        "silver",
+        "ellipse",
+        "asymmetric",
+        "organic",
+        "minimalist",
+        "sculptural",
+        "cool silver",
+        "soft grey",
+        "handcrafted",
+        "weightless",
+        "silver grey",
+        "soft luster",
+        "sterling silver",
+        "adjustable size",
+        "matte silver",
+        "soft grey"
+      ]
+    },
+    {
+      "category" : "Bracelet",
+      "effort" : 4,
+      "name" : {
+        "en" : "Handmade sterling silver bracelet with circular silver links"
+      },
+      "new" : true,
+      "options" : [
+
+      ],
+      "photos" : [
+        "1.jpg",
+        "2.jpg",
+        "3.jpg",
+        "4.jpg",
+        "5.jpg",
+        "6.jpg",
+        "7.jpg"
+      ],
+      "price" : {
+        "USD" : 449
+      },
+      "sku" : "SLX-BR-2609-02",
+      "slug" : "handmade-sterling-silver-bracelet-with-circular-silver-links",
+      "specs" : [
+        {
+          "label" : {
+            "en" : "Length"
+          },
+          "value" : {
+            "en" : ""
+          }
+        },
+        {
+          "label" : {
+            "en" : "Material"
+          },
+          "value" : {
+            "en" : ""
+          }
+        },
+        {
+          "label" : {
+            "en" : "Weight"
+          },
+          "value" : {
+            "en" : ""
+          }
+        },
+        {
+          "label" : {
+            "en" : "Pearl type"
+          },
+          "value" : {
+            "en" : ""
+          }
+        },
+        {
+          "label" : {
+            "en" : "Pearl size"
+          },
+          "value" : {
+            "en" : ""
+          }
+        },
+        {
+          "label" : {
+            "en" : "Pearl color"
+          },
+          "value" : {
+            "en" : ""
+          }
+        },
+        {
+          "label" : {
+            "en" : "Clasp"
+          },
+          "value" : {
+            "en" : ""
+          }
+        },
+        {
+          "label" : {
+            "en" : "Size"
+          },
+          "value" : {
+            "en" : ""
+          }
+        },
+        {
+          "label" : {
+            "en" : "Silver"
+          },
+          "value" : {
+            "en" : ""
+          }
+        },
+        {
+          "label" : {
+            "en" : "Thickness"
+          },
+          "value" : {
+            "en" : ""
+          }
+        },
+        {
+          "label" : {
+            "en" : "Width"
+          },
+          "value" : {
+            "en" : ""
+          }
+        }
+      ],
+      "status" : "available",
+      "story" : {
+        "en" : "This is not a mass-produced replica, but a one-of-a-kind piece born from 999 fine silver repeatedly hammered, shaped, and annealed in the hands of an artisan. Each ring carries the tiny irregularities and textures unique to handmade work, with the substantial weight of 30 grams. The heart-shaped tag is engraved with the blessing \"Good luck.\" Beauty should grow from what is real. Wear it, and you no longer need to explain your style—it has already said everything for you."
+      },
+      "tags" : [
+        "handcrafted",
+        "sterling silver",
+        "minimalist",
+        "tactile",
+        "heirloom",
+        "matte silver",
+        "oxidized grey",
+        "handmade",
+        "matte silver",
+        "oxidized grey"
+      ],
+      "videos" : {
+        "7.jpg" : "7.mp4"
+      }
+    },
+    {
+      "category" : "Necklace",
+      "effort" : 4,
+      "name" : {
+        "en" : "Pearl Necklace in a Triangular Cage"
+      },
+      "new" : true,
+      "options" : [
+
+      ],
+      "photos" : [
+        "1.jpg",
+        "2.jpg",
+        "3.jpg",
+        "4.jpg",
+        "5.jpg",
+        "7.jpg",
+        "8.jpg",
+        "9.jpg",
+        "10.jpg"
+      ],
+      "price" : {
+        "USD" : 599
+      },
+      "sku" : "SLX-NK-2606-01",
+      "slug" : "necklace-pearl-in-triangle-box",
+      "specs" : [
+        {
+          "label" : {
+            "en" : "Length"
+          },
+          "value" : {
+            "en" : "47.5cm"
+          }
+        },
+        {
+          "label" : {
+            "en" : "Material"
+          },
+          "value" : {
+            "en" : "Ag999"
+          }
+        },
+        {
+          "label" : {
+            "en" : "Weight"
+          },
+          "value" : {
+            "en" : "36.8g"
+          }
+        },
+        {
+          "label" : {
+            "en" : "Pearl Type"
+          },
+          "value" : {
+            "en" : "Tahitian Black Pearl"
+          }
+        },
+        {
+          "label" : {
+            "en" : "Pearl Size"
+          },
+          "value" : {
+            "en" : "14.8mm"
+          }
+        },
+        {
+          "label" : {
+            "en" : "Pearl Color"
+          },
+          "value" : {
+            "en" : "Black"
+          }
+        },
+        {
+          "label" : {
+            "en" : "Clasp"
+          },
+          "value" : {
+            "en" : "S-hook"
+          }
+        },
+        {
+          "label" : {
+            "en" : "Chain Single Side Diameter"
+          },
+          "value" : {
+            "en" : "1.9mm"
+          }
+        }
+      ],
+      "status" : "available",
+      "story" : {
+        "en" : "This is no ordinary necklace. Born under the subtle glow of an artisan’s hands, Ag999 sterling silver is repeatedly hammered and shaped into an irregular triangular cage—rough yet precise lines, with a handcrafted trace of breath, as if naturally grown from a vein of ore. At its center rests a 14.8mm Tahitian black pearl, deep as a night sea, shimmering with an iridescent blue-green sheen; it does not clamor, but through its quiet weight (36.8g) and luster, becomes the soul anchor of the piece. The chain is composed of flat links, each side 1.9mm in diameter, joined in a 47.5cm length that falls just below the collarbone. The S-hook closure opens and closes with restrained, reliable grace. Every fold, every seam is unique: no mold replicates, no assembly line persists. It does not seek to please the eye, only to answer those who understand the power of silence—truly exceptional pieces are not seen, but understood. It belongs to souls who refuse to drift with the tide: unique, born from handcraft; precious, irreplaceable. To wear it is to whisper to the world: I am here, and I have my own shape.  "
+      },
+      "tags" : [
+        "black pearl",
+        "silver triangle",
+        "minimalist",
+        "handcrafted",
+        "sculptural",
+        "deep black",
+        "matte silver",
+        "unique",
+        "handmade",
+        "custom",
+        "understated",
+        "silver",
+        "pearl",
+        "black",
+        "silver"
+      ],
+      "videos" : {
+        "10.jpg" : "10.mp4"
+      }
+    },
+    {
+      "category" : "Pendant",
+      "effort" : 3,
+      "name" : {
+        "en" : "Teardrop natural seawater Mabe pearl pendant, set in 18k gold with natural diamonds."
+      },
+      "new" : true,
+      "options" : [
+
+      ],
+      "photos" : [
+        "1.jpg",
+        "2.jpg",
+        "3.jpg",
+        "4.jpg",
+        "5.jpg",
+        "6.jpg",
+        "7.jpg"
+      ],
+      "price" : {
+        "USD" : 409
+      },
+      "sku" : "SLX-PD-2608-03",
+      "slug" : "teardrop-natural-seawater-mabe-pearl-pendant-set-in-18k-gold-with-natural-diamonds",
+      "specs" : [
+        {
+          "label" : {
+            "en" : "Pendant length"
+          },
+          "value" : {
+            "en" : "26mm"
+          }
+        },
+        {
+          "label" : {
+            "en" : "Width"
+          },
+          "value" : {
+            "en" : "14mm"
+          }
+        },
+        {
+          "label" : {
+            "en" : "Sterling silver and freshwater pearl."
+          },
+          "value" : {
+            "en" : "18k gold"
+          }
+        },
+        {
+          "label" : {
+            "en" : "Pearl type"
+          },
+          "value" : {
+            "en" : "Oceanwater Mabé Pearl"
+          }
+        },
+        {
+          "label" : {
+            "en" : "Pearl colour"
+          },
+          "value" : {
+            "en" : "Silver blue"
+          }
+        }
+      ],
+      "status" : "available",
+      "story" : {
+        "en" : "A natural saltwater mabé pearl, shaped as a teardrop, unpolished yet inherently rhythmic—silver-blue depths with a cool pearl sheen, like the quiet breath of the deep sea. Clean, restrained lines; a whisper of 18k gold frames the edge, cradling a natural diamond that shimmers faintly—not loud, just a point of light. At 26mm, it falls with the curve of the neckline—a quiet statement for daily wear: beauty needs no ornament, only presence."
+      },
+      "tags" : [
+        "teardrop pearl",
+        "18k gold",
+        "natural diamond",
+        "minimalist luxury",
+        "silver-gray",
+        "warm gold",
+        "icy white"
+      ],
+      "videos" : {
+        "7.jpg" : "7.mp4"
+      }
+    },
+    {
+      "category" : "Pendant",
+      "effort" : 4,
+      "name" : {
+        "en" : "Molten Heart, handcrafted sterling silver heart pendant"
+      },
+      "new" : true,
+      "options" : [
+
+      ],
+      "photos" : [
+        "1.jpg",
+        "2.jpg",
+        "3.jpg",
+        "4.jpg",
+        "5.jpg",
+        "6.jpg",
+        "7.jpg",
+        "8.jpg"
+      ],
+      "price" : {
+        "USD" : 169
+      },
+      "sku" : "SLX-JW-2607-02",
+      "slug" : "molten-heart-handcrafted-sterling-silver-heart-pendant",
+      "specs" : [
+
+      ],
+      "status" : "available",
+      "story" : {
+        "en" : "It is not a perfect heart, but a liquid moment tenderly held—pure silver quietly extends in the artisan’s hands, condensing into a drop of lingering emotion about to fall. Hand-forged and shaped from Ag999 high-purity silver, its surface bears a subtle undulating texture, like moonlight skimming a still lake. At 15.0g, the weight is just right—light yet present against the neck. Two hanging strands resemble teardrops, but carry no sorrow; they only speak of a restrained softness: love need not be sharp—sometimes it is simply silver light that melts and flows downward. Wearing it is to carry an unspoken certainty close to your chest—quiet, yet resonating."
+      },
+      "tags" : [
+        "molten heart",
+        "handcrafted silver",
+        "minimalist pendant",
+        "organic form",
+        "quiet elegance",
+        "silver",
+        "soft grey"
+      ],
+      "videos" : {
+        "2.jpg" : "2.mp4"
+      }
+    },
+    {
+      "category" : "Necklace",
+      "effort" : 3,
+      "name" : {
+        "en" : "Gold necklace with white-gold pearls"
+      },
+      "new" : false,
+      "options" : [
+
+      ],
+      "photos" : [
+        "1.jpg",
+        "2.jpg",
+        "3.jpg",
+        "4.jpg",
+        "5.jpg",
+        "6.jpg",
+        "7.jpg",
+        "8.jpg"
+      ],
+      "price" : {
+        "USD" : 499
+      },
+      "sku" : "SLX-NK-2609-02",
+      "slug" : "gold-necklace-with-creamy-white-pearls",
+      "specs" : [
+        {
+          "label" : {
+            "en" : "Length"
+          },
+          "value" : {
+            "en" : "40-45cm"
+          }
+        },
+        {
+          "label" : {
+            "en" : "Weight"
+          },
+          "value" : {
+            "en" : "2.7g"
+          }
+        },
+        {
+          "label" : {
+            "en" : "Pearl size"
+          },
+          "value" : {
+            "en" : "various"
+          }
+        },
+        {
+          "label" : {
+            "en" : "Material"
+          },
+          "value" : {
+            "en" : "18k Gold"
+          }
+        },
+        {
+          "label" : {
+            "en" : "Pearl type"
+          },
+          "value" : {
+            "en" : "South Sea Golden Pearls"
+          }
+        },
+        {
+          "label" : {
+            "en" : "Pearl color"
+          },
+          "value" : {
+            "en" : "Golden"
+          }
+        },
+        {
+          "label" : {
+            "en" : "Clasp"
+          },
+          "value" : {
+            "en" : "Spring buckle"
+          }
+        }
+      ],
+      "status" : "available",
+      "story" : {
+        "en" : "A hand-strung necklace composed of baroque pearls in varied shapes, with a natural gradation of gold-white tones and a subtle iridescent sheen on the surface; delicate gold links lightly connect each pearl, creating a flowing yet restrained silhouette."
+      },
+      "tags" : [
+        "pearls",
+        "gold",
+        "baroque pearls",
+        "gold chain",
+        "organic shape",
+        "muted luster",
+        "asymmetrical",
+        "minimalist",
+        "warm ivory",
+        "soft gold",
+        "pale cream"
+      ]
+    },
+    {
+      "category" : "Necklace",
+      "effort" : 4,
+      "name" : {
+        "en" : "Handcrafted sterling silver necklace"
+      },
+      "new" : true,
+      "options" : [
+
+      ],
+      "photos" : [
+        "1.jpg",
+        "2.jpg",
+        "3.jpg",
+        "4.jpg",
+        "5.jpg",
+        "6.jpg"
+      ],
+      "price" : {
+        "CNY" : 1049,
+        "USD" : 299
+      },
+      "sku" : "SLX-NK-2606-02",
+      "slug" : "necklace-double-chain-link",
+      "specs" : [
+        {
+          "label" : {
+            "en" : "Length"
+          },
+          "value" : {
+            "en" : "48.5cm"
+          }
+        },
+        {
+          "label" : {
+            "en" : "Material"
+          },
+          "value" : {
+            "en" : "Pure Silver 999"
+          }
+        },
+        {
+          "label" : {
+            "en" : "Weight"
+          },
+          "value" : {
+            "en" : "31.5g"
+          }
+        },
+        {
+          "label" : {
+            "en" : "Clasp"
+          },
+          "value" : {
+            "en" : "Simple hook "
+          }
+        }
+      ],
+      "status" : "available",
+      "story" : {
+        "en" : "This necklace was not made, but grown — 999 pure silver stretched, twisted, and set by hand, every contour holding the breath of the maker. At 31.5 grams, it settles on the collarbone with quiet presence. The 48.5 cm chain follows the neckline, fastened with a simple, clean hook — no excess, only the cold gleam of silver in quiet dialogue with the warm, irregular texture of a baroque freshwater pearl. The pearl is not round, not perfect — and all the more real for it. The silver is coarse yet soft, like an unpolished verse. It does not seek attention, only resonance. Wearing it, you are not adorning yourself — you are receiving a silent narrative of texture."
+      },
+      "tags" : [
+        "hand-forged",
+        "asymmetrical",
+        "organic",
+        "minimalist",
+        "silver",
+        "textured",
+        "matte silver",
+        "cool grey",
+        "handmade",
+        "unique",
+        "custom",
+        "pearl",
+        "understated",
+        "silver",
+        "ivory",
+        "soft grey",
+        "handcrafted",
+        "organic silver",
+        "baroque pearl",
+        "minimalist luxury",
+        "tactile elegance",
+        "cool silver",
+        "luminous ivory"
+      ]
+    },
+    {
+      "category" : "Bracelet",
+      "effort" : 4,
+      "name" : {
+        "en" : "Ag999 Sterling Silver Sweetheart Bracelet"
+      },
+      "new" : true,
+      "options" : [
+
+      ],
+      "photos" : [
+        "1.jpg",
+        "2.jpg",
+        "3.jpg",
+        "4.jpg",
+        "5.jpg",
+        "6.jpg",
+        "7.jpg",
+        "8.jpg",
+        "9.jpg",
+        "10.jpg"
+      ],
+      "price" : {
+        "USD" : 259
+      },
+      "sku" : "SLX-JW-2609-02",
+      "slug" : "41-slx-jw-2609-02",
+      "specs" : [
+        {
+          "label" : {
+            "en" : "Length"
+          },
+          "value" : {
+            "en" : "20cm"
+          }
+        },
+        {
+          "label" : {
+            "en" : "Weight"
+          },
+          "value" : {
+            "en" : "17g"
+          }
+        }
+      ],
+      "status" : "available",
+      "story" : {
+        "en" : "Handcrafted Ag999 sterling silver sweetheart bracelet, 20cm adjustable length, sweet heart shapes—each one is a unique existence. Whether worn alone or stacked, it always shines with a warm silver glow. It's eye-catching and radiant—the perfect bracelet and gift ❤️"
+      },
+      "tags" : [
+        "sterling silver",
+        "handmade",
+        "minimalist",
+        "textured",
+        "heart motif",
+        "matte silver"
+      ]
+    },
+    {
+      "category" : "Bracelet",
+      "effort" : 4,
+      "name" : {
+        "en" : "Dark-style 999 sterling silver handmade cuff with Tahitian black pearl pendant"
+      },
+      "new" : true,
+      "options" : [
+
+      ],
+      "photos" : [
+        "1.jpg",
+        "2.jpg",
+        "3.jpg",
+        "4.jpg",
+        "5.jpg",
+        "8.jpg",
+        "9.jpg",
+        "10.jpg",
+        "11.jpg"
+      ],
+      "price" : {
+        "USD" : 769
+      },
+      "sku" : "SLX-BR-2608-04",
+      "slug" : "dark-style-999-sterling-silver-handmade-cuff-with-tahitian-black-pearl-pendant",
+      "specs" : [
+        {
+          "label" : {
+            "en" : "Weight"
+          },
+          "value" : {
+            "en" : "59g"
+          }
+        },
+        {
+          "label" : {
+            "en" : "Pearl type"
+          },
+          "value" : {
+            "en" : "Seawater pearl"
+          }
+        },
+        {
+          "label" : {
+            "en" : "Pearl size"
+          },
+          "value" : {
+            "en" : "14.3mm"
+          }
+        },
+        {
+          "label" : {
+            "en" : "Pearl color"
+          },
+          "value" : {
+            "en" : "Black"
+          }
+        },
+        {
+          "label" : {
+            "en" : "Size"
+          },
+          "value" : {
+            "en" : "Size M"
+          }
+        },
+        {
+          "label" : {
+            "en" : "Sterling silver"
+          },
+          "value" : {
+            "en" : "Ag999"
+          }
+        }
+      ],
+      "status" : "available",
+      "story" : {
+        "en" : "This handmade sterling silver bracelet, 999 purity, forged by hand—its texture like tree bark, rough yet holding a quiet, subdued gleam. At 59 grams, it settles on the wrist, with a single Tahitian baroque black pearl suspended beneath—14.3mm, naturally imperfect, its near-ink charcoal luster shimmering with ghostly blue and green undertones, like faint light moving beneath a night-dark sea. A small round tag etched with \"Good Luck\" hangs at the end of the silver, low-key as a whispered mantra. It does not court the eye; it waits for those who understand—when light grazes the silver marks and the pearl's surface, that instant of matte and depth is enough to make the heart skip.   "
+      },
+      "tags" : [
+        "999纯银手镯 手工制作 暗黑风格 大溪地珍珠吊坠",
+        "dark silver",
+        "hand-forged",
+        "tahitian pearl",
+        "baroque pendant",
+        "cuff bracelet",
+        "gunmetal grey",
+        "deep peacock black",
+        "handmade cuff",
+        "minimalist luxury",
+        "matte silver",
+        "deep charcoal grey",
+        "iridescent peacock black"
+      ],
+      "videos" : {
+        "11.jpg" : "11.mp4"
+      }
+    },
+    {
+      "category" : "Ring",
+      "effort" : 4,
+      "name" : {
+        "en" : "Handmade sterling silver circle ring"
+      },
+      "new" : true,
+      "options" : [
+
+      ],
+      "photos" : [
+        "1.jpg",
+        "2.jpg",
+        "3.jpg",
+        "4.jpg",
+        "5.jpg",
+        "6.jpg",
+        "7.jpg",
+        "8.jpg",
+        "9.jpg"
+      ],
+      "price" : {
+        "USD" : 99
+      },
+      "sku" : "SLX-RG-2609-01",
+      "slug" : "handmade-sterling-silver-circle-ring",
+      "specs" : [
+
+      ],
+      "status" : "available",
+      "story" : {
+        "en" : "This circle ring is hand-hammered from 999 fine silver, honest in structure and full of strength. At 6.6 grams, the weight is just right. Its irregular oval form is an improvised stroke from the artisan's fingertips, rejecting standardized perfection. Wearing it is not an embellishment but a statement: beauty can be plain, strength can be subtle. A perfect everyday accessory and a perfect gift ❤️"
+      },
+      "tags" : [
+        "minimalist",
+        "handcrafted",
+        "silver ring",
+        "quiet luxury",
+        "organic form",
+        "matte silver",
+        "warm grey",
+        "silver",
+        "understated",
+        "sculptural",
+        "cool silver",
+        "matte grey"
+      ],
+      "videos" : {
+        "9.jpg" : "9.mp4"
+      }
+    },
+    {
+      "category" : "Pendant",
+      "effort" : 3,
+      "name" : {
+        "en" : "13mm natural black pearl, 18k gold clasp, round, flawless"
+      },
+      "new" : true,
+      "options" : [
+
+      ],
+      "photos" : [
+        "1.jpg",
+        "2.jpg",
+        "3.jpg",
+        "4.jpg",
+        "5.jpg",
+        "6.jpg",
+        "7.jpg",
+        "8.jpg",
+        "9.jpg"
+      ],
+      "price" : {
+        "USD" : 419
+      },
+      "sku" : "SLX-PD-2608-04",
+      "slug" : "13mm-natural-black-pearl-18k-gold-clasp-round-flawless",
+      "specs" : [
+        {
+          "label" : {
+            "en" : "Pearl type"
+          },
+          "value" : {
+            "en" : "Natural saltwater pearl"
+          }
+        },
+        {
+          "label" : {
+            "en" : "Pearl size"
+          },
+          "value" : {
+            "en" : "13mm"
+          }
+        },
+        {
+          "label" : {
+            "en" : "Pearl color"
+          },
+          "value" : {
+            "en" : "Black"
+          }
+        },
+        {
+          "label" : {
+            "en" : "Accessory material"
+          },
+          "value" : {
+            "en" : "18k gold"
+          }
+        }
+      ],
+      "status" : "available",
+      "story" : {
+        "en" : "A 13mm natural black pearl, perfectly round and full, its surface like still water in a deep pool—gentle, reserved, yet holding an inner glow. Flawless texture shifts with subtle iridescence under light, understated but substantial. An 18k gold clasp set with zirconia, refined, sweet, and luxurious. It whispers at the collarbone: true elegance needs no explanation. Worn, that deep grey-black against the skin is a quiet statement—a gift from time itself."
+      },
+      "tags" : [
+        "black pearl",
+        "sterling silver",
+        "18k gold clasp",
+        "minimalist luxury",
+        "handcrafted",
+        "deep grey-black",
+        "warm silver",
+        "soft gold"
+      ],
+      "videos" : {
+        "9.jpg" : "9.mp4"
+      }
+    },
+    {
+      "category" : "Ring",
+      "effort" : 4,
+      "name" : {
+        "en" : "Rare-find 999 sterling silver ring, handmade."
+      },
+      "new" : true,
+      "options" : [
+
+      ],
+      "photos" : [
+        "1.jpg",
+        "2.jpg",
+        "3.jpg",
+        "4.jpg",
+        "5.jpg",
+        "6.jpg"
+      ],
+      "price" : {
+        "USD" : 59
+      },
+      "sku" : "SLX-RG-2608-01",
+      "slug" : "rare-find-999-sterling-silver-ring-handmade",
+      "specs" : [
+
+      ],
+      "status" : "available",
+      "story" : {
+        "en" : "999 sterling silver. This minimalist ring is hand-hammered into shape, every edge carrying the warmth and resolve of the maker's hand. At 6.7g, it is light in weight yet holds a quiet strength; the asymmetrical geometric facets do not shout, yet refuse to be overlooked. It does not chase trends—it answers only to the wearer's inner sense of order: coolness veiling warmth, restraint where sharpness meets. True independent design turns the everyday into expression—no words needed, the hand already speaks."
+      },
+      "tags" : [
+        "999纯银 手工制作 小众设计 纯银戒指",
+        "handmade silver",
+        "minimalist ring",
+        "asymmetric design",
+        "999 fine silver",
+        "statement jewelry",
+        "silver",
+        "brushed metallic"
+      ],
+      "videos" : {
+        "6.jpg" : "6.mp4"
+      }
+    },
+    {
+      "category" : "Pendant",
+      "effort" : 3,
+      "name" : {
+        "en" : "Seawater Mabe Pearl, 18k Gold Bezel, 16mm Diameter"
+      },
+      "new" : true,
+      "options" : [
+
+      ],
+      "photos" : [
+        "1.jpg",
+        "2.jpg",
+        "3.jpg",
+        "4.jpg",
+        "5.jpg",
+        "6.jpg",
+        "7.jpg",
+        "8.jpg",
+        "9.jpg"
+      ],
+      "price" : {
+        "USD" : 339
+      },
+      "sku" : "SLX-PD-2608-02",
+      "slug" : "seawater-mabe-pearl-18k-gold-bezel-16mm-diameter",
+      "specs" : [
+
+      ],
+      "status" : "available",
+      "story" : {
+        "en" : "A 16mm natural saltwater mabé pearl, its unpolished dome concealing a deep-sea iridescence—blue-violet undertones shifting like dusk over water, breathing with the light. An 18k gold bezel holds its silhouette with quiet restraint, not competing but supporting; the warm metal and the pearl’s soft glow meet in subtle tension. It makes no noise, yet commands the collarbone—weighted when still, catching the light with the slightest movement. A silent statement for everyday. Each mabé’s iridescence is one of a kind, touched by the tide, carrying memory without embellishment. To wear it is not to adorn, but to let poetry settle at the hollow of the throat."
+      },
+      "tags" : [
+        "natural mabe pearl",
+        "18k gold",
+        "iridescent",
+        "minimalist pendant",
+        "oceanic glow",
+        "deep blue",
+        "violet",
+        "warm gold"
+      ],
+      "videos" : {
+        "1.jpg" : "1.mp4"
+      }
+    },
+    {
+      "category" : "Pendant",
+      "effort" : 5,
+      "name" : {
+        "en" : "Handcrafted 999 pure silver hollow heart-shaped pendant"
+      },
+      "new" : true,
+      "options" : [
+
+      ],
+      "photos" : [
+        "2.jpg",
+        "3.jpg",
+        "4.jpg",
+        "5.jpg",
+        "6.jpg",
+        "7.jpg",
+        "8.jpg",
+        "10.jpg",
+        "11.jpg",
+        "12.jpg"
+      ],
+      "price" : {
+        "USD" : 269
+      },
+      "sku" : "SLX-JW-2607-01",
+      "slug" : "handcrafted-999-pure-silver-hollow-heart-shaped-pendant",
+      "specs" : [
+
+      ],
+      "status" : "available",
+      "story" : {
+        "en" : "This double-sided heart pendant honors only tactility and presence—hand-hammered from 999 pure silver, its 20.5-gram weight settles with quiet poise on the collarbone. The hollow structure breathes with lightness; each side measures 1.5mm—just enough substance without bulk. The surface texture bears the trace of the artisan’s hand, raw yet softly luminous, like an heirloom polished by time. It does not shout, but holds its own strength—not a saccharine confession, but a silent, steady favor. Cool at first touch, it warms against the skin—as if wearing something deeply felt, yet never spoken aloud."
+      },
+      "tags" : [
+        "纯银，手工制作，空心爱心大吊坠",
+        "handcrafted",
+        "minimalist",
+        "textured silver",
+        "sculptural",
+        "quiet luxury",
+        "matte silver",
+        "gunmetal undertone",
+        "hollow heart pendant",
+        "999 silver",
+        "minimalist elegance",
+        "substantial weight",
+        "matte silver",
+        "cool grey"
+      ],
+      "videos" : {
+        "2.jpg" : "2.mp4"
+      }
+    },
+    {
+      "category" : "Bracelet",
+      "effort" : 3,
+      "name" : {
+        "en" : "Bracelet - flat mountains"
+      },
+      "new" : true,
+      "options" : [
+
+      ],
+      "photos" : [
+        "1.jpg",
+        "2.jpg",
+        "3.jpg",
+        "4.jpg",
+        "5.jpg",
+        "6.jpg",
+        "7.jpg",
+        "8.jpg"
+      ],
+      "price" : {
+        "USD" : 559
+      },
+      "sku" : "SLX-JW-2606-06",
+      "slug" : "bracelet-flat-mountains",
+      "specs" : [
+        {
+          "label" : {
+            "en" : "Weight"
+          },
+          "value" : {
+            "en" : "56g"
+          }
+        },
+        {
+          "label" : {
+            "en" : "Size"
+          },
+          "value" : {
+            "en" : "Size M"
+          }
+        },
+        {
+          "label" : {
+            "en" : "Sterling silver"
+          },
+          "value" : {
+            "en" : "Ag999"
+          }
+        },
+        {
+          "label" : {
+            "en" : "Thickness"
+          },
+          "value" : {
+            "en" : "2mm"
+          }
+        },
+        {
+          "label" : {
+            "en" : "Width"
+          },
+          "value" : {
+            "en" : "19mm"
+          }
+        }
+      ],
+      "status" : "available",
+      "story" : {
+        "en" : "Hand-forged from Ag999 pure silver into a 19mm wide, 2mm thick size M bracelet. A substantial 56g with a surface texture like distant rolling mountains—cool yet warm, made for everyday wear."
+      },
+      "tags" : [
+        "handcrafted",
+        "silver texture",
+        "minimalist elegance",
+        "matte silver",
+        "gunmetal grey"
+      ],
+      "videos" : {
+        "8.jpg" : "8.mp4"
+      }
+    },
+    {
+      "category" : "Choker",
+      "effort" : 4,
+      "name" : {
+        "en" : "Necklace - Chocker - solid"
+      },
+      "new" : true,
+      "options" : [
+
+      ],
+      "photos" : [
+        "1.jpg",
+        "2.jpg",
+        "3.jpg",
+        "4.jpg",
+        "5.jpg"
+      ],
+      "price" : {
+        "USD" : 359
+      },
+      "sku" : "SLX-JW-2606-08",
+      "slug" : "necklace-chocker-solid",
+      "specs" : [
+        {
+          "label" : {
+            "en" : "Weight"
+          },
+          "value" : {
+            "en" : "47.2g"
+          }
+        }
+      ],
+      "status" : "available",
+      "story" : {
+        "en" : "Hand-forged in S925 sterling silver, a substantial 47.2g, clean blade-like curves, made for everyday wear"
+      },
+      "tags" : [
+        "minimalist",
+        "sculptural",
+        "handcrafted",
+        "silver",
+        "weighty elegance",
+        "matte silver",
+        "cool grey"
+      ]
+    },
+    {
+      "category" : "Bracelet",
+      "effort" : 4,
+      "name" : {
+        "en" : "Sterling silver bracelet, natural freshwater pearls, handmade."
+      },
+      "new" : true,
+      "options" : [
+
+      ],
+      "photos" : [
+        "1.jpg",
+        "2.jpg",
+        "3.jpg",
+        "4.jpg",
+        "5.jpg",
+        "6.jpg",
+        "7.jpg",
+        "8.jpg"
+      ],
+      "price" : {
+        "USD" : 389
+      },
+      "sku" : "SLX-JW-2606-03",
+      "slug" : "sterling-silver-bracelet-natural-freshwater-pearls-handmade",
+      "specs" : [
+        {
+          "label" : {
+            "en" : "Length"
+          },
+          "value" : {
+            "en" : "23cm"
+          }
+        },
+        {
+          "label" : {
+            "en" : "Weight"
+          },
+          "value" : {
+            "en" : "35g"
+          }
+        },
+        {
+          "label" : {
+            "en" : "Pearl type"
+          },
+          "value" : {
+            "en" : "Freshwater baroque pearl"
+          }
+        },
+        {
+          "label" : {
+            "en" : "Pearl size"
+          },
+          "value" : {
+            "en" : "12-14mm"
+          }
+        },
+        {
+          "label" : {
+            "en" : "Pearl color"
+          },
+          "value" : {
+            "en" : "White"
+          }
+        },
+        {
+          "label" : {
+            "en" : "Button clasp"
+          },
+          "value" : {
+            "en" : "S-hook"
+          }
+        },
+        {
+          "label" : {
+            "en" : "Sterling silver"
+          },
+          "value" : {
+            "en" : "Ag999"
+          }
+        }
+      ],
+      "status" : "available",
+      "story" : {
+        "en" : "This bracelet is hand-forged from Ag999 pure silver, with each link hand-hammered for texture. Five 12–14mm natural freshwater baroque pearls hang from it, their creamy white luster revealing a faint cool green undertone—an untamed natural beauty. The S-hook clasp is clean and simple, the 23cm length easily adjusts to wrist size, and 26g is the weight of the pure silver alone. The soft bright white of the silver pairs perfectly with the gentle luster of the pearls—a truly striking bracelet."
+      },
+      "tags" : [
+        "handmade silver",
+        "freshwater baroque pearls",
+        "minimalist luxury",
+        "tactile elegance",
+        "matte silver",
+        "luminous white with cool undertones"
+      ]
+    },
+    {
+      "category" : "Bracelet",
+      "effort" : 4,
+      "name" : {
+        "en" : "Bracelet - Chain & heart"
+      },
+      "new" : true,
+      "options" : [
+
+      ],
+      "photos" : [
+        "1.jpg",
+        "2.jpg",
+        "3.jpg",
+        "4.jpg",
+        "5.jpg",
+        "6.jpg",
+        "7.jpg"
+      ],
+      "price" : {
+        "USD" : 239
+      },
+      "sku" : "SLX-JW-2606-05",
+      "slug" : "bracelet-chain-heart",
+      "specs" : [
+        {
+          "label" : {
+            "en" : "Length"
+          },
+          "value" : {
+            "en" : "cm"
+          }
+        },
+        {
+          "label" : {
+            "en" : "Weight"
+          },
+          "value" : {
+            "en" : "24"
+          }
+        },
+        {
+          "label" : {
+            "en" : "Button clasp"
+          },
+          "value" : {
+            "en" : "S-hook"
+          }
+        },
+        {
+          "label" : {
+            "en" : "Sterling silver"
+          },
+          "value" : {
+            "en" : "Ag999"
+          }
+        }
+      ],
+      "status" : "available",
+      "story" : {
+        "en" : "Ag999 sterling silver bracelet, handmade, 22cm of just-right curve, 24.0g of grounding weight; chunky links with hand-hammered texture, raw and bold, heart pendant engraved with \"Good Luck\" and \"Ag999\", S-hook clasp that opens and closes cleanly. Made for everyday, and a perfect gift."
+      },
+      "tags" : [
+        "handcrafted",
+        "silver999",
+        "minimalist",
+        "tactile",
+        "heirloom",
+        "matte silver",
+        "oxidized grey"
+      ]
+    },
+    {
+      "category" : "Earrings",
+      "effort" : 3,
+      "name" : {
+        "en" : "Earrings - Pearl in Basket"
+      },
+      "new" : false,
+      "options" : [
+
+      ],
+      "photos" : [
+        "1.jpg",
+        "2.jpg",
+        "3.jpg",
+        "4.jpg"
+      ],
+      "price" : {
+        "EUR" : 150,
+        "GBP" : 180,
+        "USD" : 200
+      },
+      "sku" : "SLX-RG-2606-03",
+      "slug" : "earings-pearl-in-bascket",
+      "specs" : [
+        {
+          "label" : {
+            "en" : "size of pearls"
+          },
+          "value" : {
+            "en" : "13mm"
+          }
+        },
+        {
+          "label" : {
+            "en" : "Material"
+          },
+          "value" : {
+            "en" : ""
+          }
+        },
+        {
+          "label" : {
+            "en" : "Weight"
+          },
+          "value" : {
+            "en" : ""
+          }
+        },
+        {
+          "label" : {
+            "en" : "Stone"
+          },
+          "value" : {
+            "en" : ""
+          }
+        }
+      ],
+      "status" : "available",
+      "story" : {
+        "en" : "A cool-toned grey-blue pearl rests in a hand-carved silver setting, its silver edges curling like twisting vines, accented with tiny crystals. The overall silhouette is soft yet resilient, understated but quietly powerful."
+      },
+      "tags" : [
+        "pearl",
+        "silver",
+        "grey-blue pearl",
+        "handcrafted",
+        "floral motif",
+        "understated elegance",
+        "silver",
+        "cool grey-blue"
+      ]
+    },
+    {
+      "category" : "Necklace",
+      "effort" : 3,
+      "name" : {
+        "en" : "18K gold chain 13mm golden pearl pendant"
+      },
+      "new" : true,
+      "options" : [
+
+      ],
+      "photos" : [
+        "1.jpg",
+        "2.jpg",
+        "3.jpg",
+        "4.jpg",
+        "5.jpg",
+        "6.jpg",
+        "7.jpg",
+        "8.jpg",
+        "9.jpg"
+      ],
+      "price" : {
+        "USD" : 589
+      },
+      "sku" : "SLX-NK-2607-01",
+      "slug" : "18k-gold-chain-13mm-golden-pearl-pendant",
+      "specs" : [
+        {
+          "label" : {
+            "en" : "Length"
+          },
+          "value" : {
+            "en" : "43cm"
+          }
+        },
+        {
+          "label" : {
+            "en" : "Material"
+          },
+          "value" : {
+            "en" : "18K"
+          }
+        },
+        {
+          "label" : {
+            "en" : "Pearl type"
+          },
+          "value" : {
+            "en" : "Sea golden pearl"
+          }
+        },
+        {
+          "label" : {
+            "en" : "Pearl size"
+          },
+          "value" : {
+            "en" : "13mm"
+          }
+        },
+        {
+          "label" : {
+            "en" : "Pearl colour"
+          },
+          "value" : {
+            "en" : "Golden"
+          }
+        },
+        {
+          "label" : {
+            "en" : "Clasp"
+          },
+          "value" : {
+            "en" : "Spring clasp"
+          }
+        }
+      ],
+      "status" : "available",
+      "story" : {
+        "en" : "Not an ornament to hang on the neck, but a still weight—a 13mm sea golden pearl, like a sliver of morning light caught in the hollow of the collarbone. The 18K gold chain weighs only 1.0g, almost weightless, yet quietly secured by a minimal spring clasp, letting the necklace sway with each breath—unvoiced, only whispering. This pearl does not gleam on the surface; it holds a gentle inner radiance: a gold that does not shout, but the steady poise of a decade settled in the deep sea. Cool to the touch, warming against the skin, like fire tamed by time. It does not compete for your gaze, yet turns every downward glance into a private ritual—light skims its surface, stirring a soft, misty glow, as if wearing a sliver of undisturbed dusk around the neck. The wearer need not speak; her neckline already narrates: restraint, fullness, effortless grace. This one-of-a-kind piece is a quiet pact between body and nature's gift."
+      },
+      "tags" : [
+        "golden pearl",
+        "18k gold",
+        "minimalist necklace",
+        "handcrafted",
+        "understated luxury",
+        "warm gold",
+        "champagne",
+        "luminous",
+        "minimalist",
+        "heirloom",
+        "weightless elegance",
+        "golden luster",
+        "warm gold",
+        "champagne",
+        "soft amber"
+      ]
+    },
+    {
+      "category" : "Necklace",
+      "effort" : 3,
+      "name" : {
+        "en" : "White Gold Necklace with Polynesia Black Pearls"
+      },
+      "new" : true,
+      "options" : [
+
+      ],
+      "photos" : [
+        "1.jpg",
+        "2.jpg",
+        "3.jpg",
+        "4.jpg",
+        "5.jpg",
+        "6.jpg",
+        "7.jpg",
+        "8.jpg",
+        "9.jpg"
+      ],
+      "price" : {
+        "USD" : 499
+      },
+      "sku" : "SLX-NK-2606-04",
+      "slug" : "white-gold-necklace-with-polynesia-black-pearls",
+      "specs" : [
+        {
+          "label" : {
+            "en" : "Length"
+          },
+          "value" : {
+            "en" : "40-45 cm"
+          }
+        },
+        {
+          "label" : {
+            "en" : "Weight"
+          },
+          "value" : {
+            "en" : "4g"
+          }
+        },
+        {
+          "label" : {
+            "en" : "Material"
+          },
+          "value" : {
+            "en" : "18K White Gold"
+          }
+        },
+        {
+          "label" : {
+            "en" : "Pearl Type"
+          },
+          "value" : {
+            "en" : "French Polynasia black pearls"
+          }
+        },
+        {
+          "label" : {
+            "en" : "Pearl Size"
+          },
+          "value" : {
+            "en" : "varied"
+          }
+        },
+        {
+          "label" : {
+            "en" : "Pearl Color"
+          },
+          "value" : {
+            "en" : "blue hue"
+          }
+        }
+      ],
+      "status" : "available",
+      "story" : {
+        "en" : "This handmade necklace features natural French Polynesian black pearls (keshi wild pearls) of varied shapes, strung on a 18K white gold chain. The pearls emit a cool blue-grey luster, with a natural, unpolished surface texture, forming a smooth and understated overall line."
+      },
+      "tags" : [
+        "pearl",
+        "gold",
+        "silver",
+        "blue",
+        "Wild pearls",
+        "silver chain",
+        "asymmetrical design",
+        "cool tone",
+        "organic texture",
+        "minimalist elegance",
+        "silver",
+        "blue-grey",
+        "icy white",
+        "French Polinesia"
+      ]
+    },
+    {
+      "category" : "Bracelet",
+      "effort" : 4,
+      "name" : {
+        "en" : "Sterling Silver Bracelet - Hammered Texture"
+      },
+      "new" : true,
+      "options" : [
+        {
+          "key" : "engrave",
+          "label" : {
+            "en" : "Personalised engraving"
+          },
+          "price" : {
+            "USD" : 50
+          },
+          "text" : true
+        }
+      ],
+      "photos" : [
+        "1.jpg",
+        "4.jpg",
+        "5.jpg",
+        "8.jpg",
+        "9.jpg",
+        "10.jpg",
+        "12.jpg",
+        "13.jpg"
+      ],
+      "price" : {
+        "USD" : 869
+      },
+      "sku" : "SLX-BR-2606-01",
+      "slug" : "sterling-silver-bracelet-hammered-texture",
+      "specs" : [
+        {
+          "label" : {
+            "en" : "Size"
+          },
+          "value" : {
+            "en" : "17 cm"
+          }
+        },
+        {
+          "label" : {
+            "en" : "Silver"
+          },
+          "value" : {
+            "en" : "Sterling Silver 999"
+          }
+        },
+        {
+          "label" : {
+            "en" : "Weight"
+          },
+          "value" : {
+            "en" : "79 g"
+          }
+        },
+        {
+          "label" : {
+            "en" : "Thickness"
+          },
+          "value" : {
+            "en" : "3mm"
+          }
+        },
+        {
+          "label" : {
+            "en" : "Width"
+          },
+          "value" : {
+            "en" : "0.9–4 cm"
+          }
+        }
+      ],
+      "status" : "available",
+      "story" : {
+        "en" : "This bracelet, crafted from Ag999 pure silver, has been repeatedly hammered, leaving a fine, undulating texture—not rigid geometry, but impromptu marks like wind passing over water, like fingertips pressing into wet clay. Light wanders across the peaks and valleys, gathering into bright spots here, receding into soft shadow there, lending the cold, hard silver a tactile suggestion of warmth. The opening is slightly offset, joining naturally, as if it had grown that way; the inner surface is smooth, while the outer edge retains the tiny facets and irregular curves of hand-forging—a delicate balance of force and restraint. The overall silhouette is both expansive and reserved. The wide-band design does not assert itself, yet through the shifting depths of its texture and the flow of light and shadow, it reveals a quiet sculptural presence."
+      },
+      "tags" : [
+        "silver",
+        "Ag999",
+        "hammered",
+        "thick",
+        "heavy",
+        "organic",
+        "minimalist",
+        "sculptural",
+        "matte silver",
+        "cool silver",
+        "grey undertone",
+        "hammered silver",
+        "organic texture",
+        "minimalist bracelet",
+        "artisanal",
+        "quiet luxury",
+        "cool silver",
+        "soft grey",
+        "luminous white"
+      ],
+      "videos" : {
+        "1.jpg" : "1.mp4"
+      }
+    },
+    {
+      "category" : "Necklace",
+      "effort" : 4,
+      "name" : {
+        "en" : "Sterling silver necklace choker"
+      },
+      "new" : true,
+      "options" : [
+
+      ],
+      "photos" : [
+        "1.jpg",
+        "2.jpg",
+        "3.jpg",
+        "4.jpg",
+        "5.jpg",
+        "6.jpg",
+        "7.jpg",
+        "8.jpg"
+      ],
+      "price" : {
+        "USD" : 709
+      },
+      "sku" : "SLX-JW-2606-18",
+      "slug" : "sterling-silver-necklace-choker",
+      "specs" : [
+        {
+          "label" : {
+            "en" : "Length"
+          },
+          "value" : {
+            "en" : "47cm"
+          }
+        },
+        {
+          "label" : {
+            "en" : "Weight"
+          },
+          "value" : {
+            "en" : "43g"
+          }
+        },
+        {
+          "label" : {
+            "en" : "Button clasp"
+          },
+          "value" : {
+            "en" : "S-hook"
+          }
+        }
+      ],
+      "status" : "available",
+      "story" : {
+        "en" : "Hand-forged in 999 fine silver, this 47cm necklace links crisp rectangular plates, opening and closing with a light S-hook clasp. At 47g it sits with a steady weight that never burdens the neck, its texture shifting with the light—understated, yet impossible to ignore."
+      },
+      "tags" : [
+        "handcrafted",
+        "sterling silver",
+        "minimalist",
+        "sculptural",
+        "matte silver",
+        "warm grey"
+      ]
+    },
+    {
+      "category" : "Necklace",
+      "effort" : 5,
+      "name" : {
+        "en" : "Necklace - Dogtag ellipse"
+      },
+      "new" : false,
+      "options" : [
+        {
+          "key" : "engrave",
+          "label" : {
+            "en" : "Personalised engraving"
+          },
+          "price" : {
+            "USD" : 50
+          },
+          "text" : true
+        }
+      ],
+      "photos" : [
+        "1.jpg",
+        "2.jpg",
+        "3.jpg",
+        "4.jpg",
+        "5.jpg",
+        "6.jpg",
+        "7.jpg",
+        "8.jpg",
+        "9.jpg"
+      ],
+      "price" : {
+        "USD" : 299
+      },
+      "sku" : "SLX-NK-2606-03",
+      "slug" : "dogtag-necklace",
+      "specs" : [
+        {
+          "label" : {
+            "en" : "Length"
+          },
+          "value" : {
+            "en" : "48.5 cm"
+          }
+        },
+        {
+          "label" : {
+            "en" : "Material"
+          },
+          "value" : {
+            "en" : "999 Pure Silver"
+          }
+        },
+        {
+          "label" : {
+            "en" : "Weight"
+          },
+          "value" : {
+            "en" : "30g"
+          }
+        },
+        {
+          "label" : {
+            "en" : "Clasp"
+          },
+          "value" : {
+            "en" : "Hook"
+          }
+        }
+      ],
+      "status" : "available",
+      "story" : {
+        "en" : "This bold yet minimalist choker necklace is composed of irregularly shaped hammered silver ovals, linked by a fine chain. Each piece carries the texture of hand-forged craftsmanship—uneven edges and subtle surface marks give them an understated presence, striking whether worn against the skin or over dark fur. Resting near the collarbone, it reads as a deliberate, architectural piece of jewelry—reserved yet powerful."
+      },
+      "tags" : [
+        "silver",
+        "choker",
+        "dogtag",
+        "hammered silver",
+        "oval links",
+        "industrial elegance",
+        "raw minimalism",
+        "matte silver",
+        "charcoal grey undertones"
+      ],
+      "videos" : {
+        "2.jpg" : "2.mp4",
+        "6.jpg" : "6.mp4"
+      }
+    },
+    {
+      "category" : "Ring",
+      "effort" : 4,
+      "name" : {
+        "en" : "Handcrafted sterling silver heart ring"
+      },
+      "new" : true,
+      "options" : [
+
+      ],
+      "photos" : [
+        "1.jpg",
+        "2.jpg",
+        "3.jpg",
+        "4.jpg",
+        "5.jpg",
+        "6.jpg",
+        "7.jpg"
+      ],
+      "price" : {
+        "USD" : 169
+      },
+      "sku" : "SLX-RG-2609-02",
+      "slug" : "handcrafted-sterling-silver-heart-ring",
+      "specs" : [
+
+      ],
+      "status" : "available",
+      "story" : {
+        "en" : "This heart-shaped ring is not a cloying symbol. Hand-forged from Ag999 pure silver, hammered repeatedly, its edges rise and fall like waves, the inner band warm and gently curved, its substantial 11.0g weight grounded and powerful. Within the heart's rough texture lies a tender obsession. A perfect everyday piece, and a perfect gift of love ❤️"
+      },
+      "tags" : [
+        "handcrafted",
+        "sterling silver",
+        "minimalist heart",
+        "organic texture",
+        "quiet luxury",
+        "cool silver",
+        "matte luster"
+      ],
+      "videos" : {
+        "7.jpg" : "7.mp4"
+      }
+    },
+    {
+      "category" : "Bracelet",
+      "effort" : 4,
+      "name" : {
+        "en" : "Ag999 sterling silver horseshoe bracelet"
+      },
+      "new" : true,
+      "options" : [
+
+      ],
+      "photos" : [
+        "1.jpg",
+        "2.jpg",
+        "3.jpg",
+        "4.jpg",
+        "5.jpg",
+        "6.jpg"
+      ],
+      "price" : {
+        "USD" : 249
+      },
+      "sku" : "SLX-BR-2609-04",
+      "slug" : "40-slx-br-2609-04",
+      "specs" : [
+        {
+          "label" : {
+            "en" : "Length"
+          },
+          "value" : {
+            "en" : "22cm"
+          }
+        },
+        {
+          "label" : {
+            "en" : "Weight"
+          },
+          "value" : {
+            "en" : "25g"
+          }
+        },
+        {
+          "label" : {
+            "en" : "Button clasp"
+          },
+          "value" : {
+            "en" : "S-hook"
+          }
+        },
+        {
+          "label" : {
+            "en" : "Size"
+          },
+          "value" : {
+            "en" : "Universal Adjustable"
+          }
+        },
+        {
+          "label" : {
+            "en" : "Sterling silver"
+          },
+          "value" : {
+            "en" : "Ag999"
+          }
+        }
+      ],
+      "status" : "available",
+      "story" : {
+        "en" : "Lucky Horseshoe Bracelet. Ag999 sterling silver, hand-forged into a horseshoe bracelet. Solid and substantial in quality, 22cm length for easy size adjustment, a 25g weight that feels just right. A subtle shimmer flows with every movement when worn—a low-key yet perfect presence ❤️"
+      },
+      "tags" : [
+        "sterling silver",
+        "horseshoe bracelet",
+        "minimalist jewelry",
+        "silver"
+      ]
+    },
+    {
+      "category" : "Bracelet",
+      "effort" : 4,
+      "name" : {
+        "en" : "999 sterling silver handmade sweetheart pendant bracelet"
+      },
+      "new" : true,
+      "options" : [
+
+      ],
+      "photos" : [
+        "1.jpg",
+        "2.jpg",
+        "3.jpg",
+        "4.jpg",
+        "5.jpg",
+        "6.jpg",
+        "7.jpg"
+      ],
+      "price" : {
+        "USD" : 239
+      },
+      "sku" : "SLX-BR-2608-01",
+      "slug" : "999-sterling-silver-handmade-sweetheart-pendant-bracelet",
+      "specs" : [
+        {
+          "label" : {
+            "en" : "Length"
+          },
+          "value" : {
+            "en" : ""
+          }
+        },
+        {
+          "label" : {
+            "en" : "Material"
+          },
+          "value" : {
+            "en" : ""
+          }
+        },
+        {
+          "label" : {
+            "en" : "Weight"
+          },
+          "value" : {
+            "en" : ""
+          }
+        },
+        {
+          "label" : {
+            "en" : "Pearl type"
+          },
+          "value" : {
+            "en" : ""
+          }
+        },
+        {
+          "label" : {
+            "en" : "Pearl size"
+          },
+          "value" : {
+            "en" : ""
+          }
+        },
+        {
+          "label" : {
+            "en" : "Pearl color"
+          },
+          "value" : {
+            "en" : ""
+          }
+        },
+        {
+          "label" : {
+            "en" : "Clasp"
+          },
+          "value" : {
+            "en" : ""
+          }
+        },
+        {
+          "label" : {
+            "en" : "Size"
+          },
+          "value" : {
+            "en" : ""
+          }
+        },
+        {
+          "label" : {
+            "en" : "Sterling silver"
+          },
+          "value" : {
+            "en" : ""
+          }
+        },
+        {
+          "label" : {
+            "en" : "Thickness"
+          },
+          "value" : {
+            "en" : ""
+          }
+        },
+        {
+          "label" : {
+            "en" : "Width"
+          },
+          "value" : {
+            "en" : ""
+          }
+        },
+        {
+          "label" : {
+            "en" : "Button clasp"
+          },
+          "value" : {
+            "en" : ""
+          }
+        },
+        {
+          "label" : {
+            "en" : "Silver"
+          },
+          "value" : {
+            "en" : ""
+          }
+        }
+      ],
+      "status" : "available",
+      "story" : {
+        "en" : "Not frosting-sweet—it's 34.5 grams of 999 pure silver, hammered and bent repeatedly by the artisan's hands into a gentle strength. A hollow heart pendant rests lightly at the wrist, crisp yet soft-edged, like a confession unspoken; a solid little heart lies beside it, matte and polished surfaces interweaving, murmuring light as the wrist turns. The perfect gift. Against the skin, its cool weight is the quietest romance of everyday life. It doesn't clamor—yet it makes your heart skip."
+      },
+      "tags" : [
+        "手工制作 纯银手链 甜心吊坠",
+        "handmade",
+        "999 silver",
+        "sweetheart bracelet",
+        "heart pendant",
+        "minimalist jewelry",
+        "silver",
+        "pale gold (accent)",
+        "sterling silver",
+        "sweetheart pendant",
+        "minimalist charm",
+        "tactile elegance",
+        "silver",
+        "matte gold"
+      ],
+      "videos" : {
+        "7.jpg" : "7.mp4"
+      }
+    },
+    {
+      "category" : "Ring",
+      "effort" : 4,
+      "name" : {
+        "en" : "Ring - Chain Links"
+      },
+      "new" : true,
+      "options" : [
+
+      ],
+      "photos" : [
+        "1.jpg",
+        "2.jpg",
+        "3.jpg",
+        "4.jpg",
+        "5.jpg",
+        "6.jpg",
+        "7.jpg",
+        "8.jpg"
+      ],
+      "price" : {
+        "USD" : 229
+      },
+      "sku" : "SLX-RG-2606-02",
+      "slug" : "ring-chain-links",
+      "specs" : [
+        {
+          "label" : {
+            "en" : "Ring size"
+          },
+          "value" : {
+            "en" : "7"
+          }
+        },
+        {
+          "label" : {
+            "en" : "Material"
+          },
+          "value" : {
+            "en" : "Ag999"
+          }
+        },
+        {
+          "label" : {
+            "en" : "Weight"
+          },
+          "value" : {
+            "en" : "15g"
+          }
+        }
+      ],
+      "status" : "available",
+      "story" : {
+        "en" : "A ring woven from rugged handmade silver chain links, each thick and twisted, with hammered texture left on the surface. The structure is tight and dynamic, balancing raw strength with restrained elegance."
+      },
+      "tags" : [
+        "handcrafted",
+        "textured silver",
+        "organic link",
+        "sculptural",
+        "minimalist",
+        "matte silver",
+        "oxidized grey"
+      ]
+    },
+    {
+      "category" : "Bracelet",
+      "effort" : 4,
+      "name" : {
+        "en" : "Hammered plain ring bracelet"
+      },
+      "new" : true,
+      "options" : [
+
+      ],
+      "photos" : [
+        "1.jpg",
+        "2.jpg",
+        "3.jpg",
+        "4.jpg",
+        "5.jpg",
+        "6.jpg"
+      ],
+      "price" : {
+        "USD" : 529
+      },
+      "sku" : "SLX-BR-2609-01",
+      "slug" : "hammered-plain-ring-bracelet",
+      "specs" : [
+        {
+          "label" : {
+            "en" : "Length"
+          },
+          "value" : {
+            "en" : ""
+          }
+        },
+        {
+          "label" : {
+            "en" : "Material"
+          },
+          "value" : {
+            "en" : ""
+          }
+        },
+        {
+          "label" : {
+            "en" : "Weight"
+          },
+          "value" : {
+            "en" : ""
+          }
+        },
+        {
+          "label" : {
+            "en" : "Pearl type"
+          },
+          "value" : {
+            "en" : ""
+          }
+        },
+        {
+          "label" : {
+            "en" : "Pearl size"
+          },
+          "value" : {
+            "en" : ""
+          }
+        },
+        {
+          "label" : {
+            "en" : "Pearl color"
+          },
+          "value" : {
+            "en" : ""
+          }
+        },
+        {
+          "label" : {
+            "en" : "Clasp"
+          },
+          "value" : {
+            "en" : ""
+          }
+        },
+        {
+          "label" : {
+            "en" : "Size"
+          },
+          "value" : {
+            "en" : ""
+          }
+        },
+        {
+          "label" : {
+            "en" : "Sterling silver"
+          },
+          "value" : {
+            "en" : ""
+          }
+        },
+        {
+          "label" : {
+            "en" : "Thickness"
+          },
+          "value" : {
+            "en" : ""
+          }
+        },
+        {
+          "label" : {
+            "en" : "Width"
+          },
+          "value" : {
+            "en" : ""
+          }
+        },
+        {
+          "label" : {
+            "en" : "Button clasp"
+          },
+          "value" : {
+            "en" : ""
+          }
+        },
+        {
+          "label" : {
+            "en" : "Silver"
+          },
+          "value" : {
+            "en" : ""
+          }
+        }
+      ],
+      "status" : "available",
+      "story" : {
+        "en" : "This bracelet captures the trace of silver awakening under the hammer — Ag999 pure silver, hand-hammered repeatedly to reveal an irregular texture. At 50.0g, its weight sits steadily against the wrist. The open design adjusts easily to size, answering the skin's touch with nothing but a gentle sheen and a subtly matte finish. Made for everyday wear, it is the perfect gift, and layers beautifully when stacked. No elaborate ornamentation — only the raw breath of metal itself, like a statement worn smooth by time: silent, yet impossible to ignore."
+      },
+      "tags" : [
+        "锤纹手工纯银手镯",
+        "handcrafted",
+        "minimalist",
+        "silver texture",
+        "weighty elegance",
+        "quiet luxury",
+        "matte silver",
+        "warm grey undertone"
+      ],
+      "videos" : {
+        "6.jpg" : "6.mp4"
+      }
+    },
+    {
+      "category" : "Necklace",
+      "effort" : 3,
+      "name" : {
+        "en" : "Natural freshwater pearl pendant necklace, 925 silver chain"
+      },
+      "new" : true,
+      "options" : [
+
+      ],
+      "photos" : [
+        "1.jpg",
+        "2.jpg",
+        "3.jpg",
+        "4.jpg",
+        "5.jpg",
+        "6.jpg",
+        "7.jpg",
+        "8.jpg"
+      ],
+      "price" : {
+        "USD" : 79
+      },
+      "sku" : "SLX-NK-2608-01",
+      "slug" : "natural-freshwater-pearl-pendant-necklace-925-silver-chain",
+      "specs" : [
+        {
+          "label" : {
+            "en" : "Length"
+          },
+          "value" : {
+            "en" : "45cm"
+          }
+        },
+        {
+          "label" : {
+            "en" : "Sterling silver & pearl."
+          },
+          "value" : {
+            "en" : "s925"
+          }
+        },
+        {
+          "label" : {
+            "en" : "Freshwater pearl type"
+          },
+          "value" : {
+            "en" : "Freshwater pearl"
+          }
+        },
+        {
+          "label" : {
+            "en" : "Pearl size"
+          },
+          "value" : {
+            "en" : "9mm"
+          }
+        },
+        {
+          "label" : {
+            "en" : "Pearl colour"
+          },
+          "value" : {
+            "en" : "White"
+          }
+        },
+        {
+          "label" : {
+            "en" : "Clasp-style"
+          },
+          "value" : {
+            "en" : "Spring ring clasp"
+          }
+        }
+      ],
+      "status" : "available",
+      "story" : {
+        "en" : "A single natural freshwater pearl rests at the centre of an s925 silver setting — the surface fine as scattered stardust, the edges swelling like a wave arrested mid-motion. The chain is slender yet resilient, weightless against the neck, carrying its own rhythm as it falls. Cool silver lustre and the pearl's soft glow reflect each other — not adornment, but presence itself: quiet edge, understated fullness. Wear it not to be seen, but to affirm your own worth."
+      },
+      "tags" : [
+        "freshwater pearl",
+        "sterling silver",
+        "handcrafted",
+        "minimalist luxury",
+        "organic elegance",
+        "silver",
+        "ivory",
+        "soft luster"
+      ],
+      "videos" : {
+        "8.jpg" : "8.mp4"
+      }
+    },
+    {
+      "category" : "Ring",
+      "effort" : 3,
+      "name" : {
+        "en" : "Wide-band ring, handmade in sterling silver, hammered texture, adjustable size"
+      },
+      "new" : true,
+      "options" : [
+
+      ],
+      "photos" : [
+        "1.jpg",
+        "2.jpg",
+        "3.jpg",
+        "4.jpg",
+        "5.jpg",
+        "6.jpg",
+        "7.jpg"
+      ],
+      "price" : {
+        "USD" : 169
+      },
+      "sku" : "SLX-JW-2606-13",
+      "slug" : "wide-band-ring-handmade-in-sterling-silver-hammered-texture-adjustable-size",
+      "specs" : [
+        {
+          "label" : {
+            "en" : "Ring size"
+          },
+          "value" : {
+            "en" : "17mm"
+          }
+        },
+        {
+          "label" : {
+            "en" : "Weight"
+          },
+          "value" : {
+            "en" : "10.75g"
+          }
+        }
+      ],
+      "status" : "available",
+      "story" : {
+        "en" : "Ag999 sterling silver hand-hammered wide-band ring, 17mm wide, 10.8g of grounded weight that sits close against the finger, its texture like faint ripples on still water; adjustable size, suited to everyday wear."
+      },
+      "tags" : [
+        "handmade",
+        "sterling silver",
+        "hammered texture",
+        "adjustable ring",
+        "silver"
+      ]
+    },
+    {
+      "category" : "Bracelet",
+      "effort" : 4,
+      "name" : {
+        "en" : "Handcrafted 999 pure silver bracelet, distinctive silver bracelet"
+      },
+      "new" : true,
+      "options" : [
+
+      ],
+      "photos" : [
+        "1.jpg",
+        "2.jpg",
+        "3.jpg",
+        "4.jpg",
+        "5.jpg",
+        "6.jpg",
+        "7.jpg",
+        "8.jpg"
+      ],
+      "price" : {
+        "USD" : 259
+      },
+      "sku" : "SLX-BR-2608-02",
+      "slug" : "handcrafted-999-pure-silver-bracelet-distinctive-silver-bracelet",
+      "specs" : [
+        {
+          "label" : {
+            "en" : "Length"
+          },
+          "value" : {
+            "en" : "21cm"
+          }
+        },
+        {
+          "label" : {
+            "en" : "Weight"
+          },
+          "value" : {
+            "en" : "17g"
+          }
+        },
+        {
+          "label" : {
+            "en" : "Button clasp"
+          },
+          "value" : {
+            "en" : "S-hook"
+          }
+        },
+        {
+          "label" : {
+            "en" : "Sterling silver"
+          },
+          "value" : {
+            "en" : "Ag999"
+          }
+        }
+      ],
+      "status" : "available",
+      "story" : {
+        "en" : "Hand-forged in 999 sterling silver, its substantial 17g weight strikes the perfect balance. The square plate with a round hole is both charming and distinctive, sweet and elegant worn alone or stacked. Perfect for everyday wear. A perfect gift for the wrist too ❤️"
+      },
+      "tags" : [
+        "999纯银 手工制作 纯银手链",
+        "handcrafted",
+        "minimalist",
+        "raw silver",
+        "quiet luxury",
+        "wearable art",
+        "matte silver",
+        "cool grey",
+        "handmade",
+        "sterling silver",
+        "tactile",
+        "understated",
+        "999 silver",
+        "weighty elegance",
+        "matte silver",
+        "oxidized grey"
+      ],
+      "videos" : {
+        "8.jpg" : "8.mp4"
+      }
+    },
+    {
+      "category" : "Bracelet",
+      "effort" : 4,
+      "name" : {
+        "en" : "Sterling silver horseshoe bracelet"
+      },
+      "new" : true,
+      "options" : [
+
+      ],
+      "photos" : [
+        "1.jpg",
+        "2.jpg",
+        "3.jpg",
+        "4.jpg",
+        "5.jpg",
+        "6.jpg",
+        "7.jpg",
+        "8.jpg",
+        "9.jpg"
+      ],
+      "price" : {
+        "USD" : 529
+      },
+      "sku" : "SLX-BR-2609-03",
+      "slug" : "39-slx-br-2609-03",
+      "specs" : [
+        {
+          "label" : {
+            "en" : "Weight"
+          },
+          "value" : {
+            "en" : "53g"
+          }
+        },
+        {
+          "label" : {
+            "en" : "Size"
+          },
+          "value" : {
+            "en" : "Material"
+          }
+        },
+        {
+          "label" : {
+            "en" : "Sterling silver"
+          },
+          "value" : {
+            "en" : "Ag999"
+          }
+        }
+      ],
+      "status" : "available",
+      "story" : {
+        "en" : "Ag999 pure silver, hand-forged into a horseshoe bracelet. 53g solid. Substantial quality, suited to different occasions and outfits. Perfect worn alone or stacked."
+      },
+      "tags" : [
+        "silver",
+        "minimalist",
+        "handmade",
+        "sculptural",
+        "weighty elegance",
+        "matte silver",
+        "warm grey"
+      ],
+      "videos" : {
+        "9.jpg" : "9.mp4"
+      }
+    },
+    {
+      "category" : "Pendant",
+      "effort" : 3,
+      "name" : {
+        "en" : "15mm Natural Black Baroque Pearl Pendant, S925 Silver Vanquisher Arrow"
+      },
+      "new" : true,
+      "options" : [
+
+      ],
+      "photos" : [
+        "1.jpg",
+        "2.jpg",
+        "3.jpg",
+        "4.jpg",
+        "5.jpg",
+        "6.jpg",
+        "7.jpg",
+        "8.jpg",
+        "9.jpg"
+      ],
+      "price" : {
+        "USD" : 169
+      },
+      "sku" : "SLX-PD-2608-06",
+      "slug" : "15mm-natural-black-baroque-pearl-pendant-s925-silver-vanquisher-arrow",
+      "specs" : [
+        {
+          "label" : {
+            "en" : "Pearl type"
+          },
+          "value" : {
+            "en" : "Saltwater pearl"
+          }
+        },
+        {
+          "label" : {
+            "en" : "Pearl size"
+          },
+          "value" : {
+            "en" : "14-15mm"
+          }
+        },
+        {
+          "label" : {
+            "en" : "Pearl colour"
+          },
+          "value" : {
+            "en" : "Black"
+          }
+        },
+        {
+          "label" : {
+            "en" : "Pendant length"
+          },
+          "value" : {
+            "en" : "6cm"
+          }
+        },
+        {
+          "label" : {
+            "en" : "Width"
+          },
+          "value" : {
+            "en" : "14mm"
+          }
+        },
+        {
+          "label" : {
+            "en" : "Accessory material"
+          },
+          "value" : {
+            "en" : "925 sterling silver"
+          }
+        }
+      ],
+      "status" : "available",
+      "story" : {
+        "en" : "14–15mm natural saltwater black pearl. A black vajra born of an ancient legend, its baroque form carrying an untamed air—deep ink-black with a shifting sheen, like star trails across a night sky. S925 silver \"Vajra Arrow\" setting: the black pearl set at its heart, sharp lines softened with grace; the tapered tip engraved in fine detail, strength and delicacy in balance. At 6cm, it rests just below the collarbone; 14mm in width, steady and understated. No ornament beyond the dialogue of raw metal and pearl—it arrests the gaze, stirs the fingertips. To wear it is to pin a quiet power to the chest."
+      },
+      "tags" : [
+        "black baroque pearl",
+        "s925 silver",
+        "vanquisher arrow",
+        "handmade pendant",
+        "minimalist luxury",
+        "deep black",
+        "oxidized silver"
+      ],
+      "videos" : {
+        "9.jpg" : "9.mp4"
+      }
+    },
+    {
+      "category" : "Necklace",
+      "effort" : 4,
+      "name" : {
+        "en" : "Silver chain with Australian blue pearl."
+      },
+      "new" : true,
+      "options" : [
+
+      ],
+      "photos" : [
+        "1.jpg",
+        "2.jpg",
+        "3.jpg",
+        "4.jpg",
+        "5.jpg",
+        "6.jpg",
+        "7.jpg",
+        "8.jpg",
+        "9.jpg",
+        "10.jpg"
+      ],
+      "price" : {
+        "USD" : 599
+      },
+      "sku" : "SLX-NK-2609-01",
+      "slug" : "autralian-blue-grey-pearls-necklace",
+      "specs" : [
+        {
+          "label" : {
+            "en" : "length"
+          },
+          "value" : {
+            "en" : "39cm"
+          }
+        },
+        {
+          "label" : {
+            "en" : "Weight"
+          },
+          "value" : {
+            "en" : "19.4g"
+          }
+        },
+        {
+          "label" : {
+            "en" : "Pearl size"
+          },
+          "value" : {
+            "en" : "3-4mm and 9-10mm"
+          }
+        },
+        {
+          "label" : {
+            "en" : "Material"
+          },
+          "value" : {
+            "en" : "925 Silver"
+          }
+        },
+        {
+          "label" : {
+            "en" : "Pearl type"
+          },
+          "value" : {
+            "en" : "Astralian and French Polynesia"
+          }
+        },
+        {
+          "label" : {
+            "en" : "Pearl color"
+          },
+          "value" : {
+            "en" : "silver-blue hue"
+          }
+        },
+        {
+          "label" : {
+            "en" : "Clasp"
+          },
+          "value" : {
+            "en" : "Horseshoe buckle"
+          }
+        }
+      ],
+      "status" : "available",
+      "story" : {
+        "en" : "A handmade silver chain strung with irregular a mix of French Polynesia black pearls and Australian natural baroque pearls, their surfaces shimmering in cool grey-blue tones. The silver is raw yet restrained—quiet, with quiet strength."
+      },
+      "tags" : [
+        "pearl",
+        "silver",
+        "baroque pearls",
+        "oxidized silver",
+        "asymmetrical",
+        "organic",
+        "minimalist",
+        "cool grey-blue",
+        "matte silver"
+      ],
+      "videos" : {
+        "10.jpg" : "10.mp4"
+      }
+    }
+  ],
+  "version" : 1
+}
