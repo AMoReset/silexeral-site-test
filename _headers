@@ -1,0 +1,4 @@
+# Always serve a fresh catalog so new pieces show up immediately.
+/catalog.json
+  Cache-Control: public, max-age=0, must-revalidate
+  CDN-Cache-Control: no-store

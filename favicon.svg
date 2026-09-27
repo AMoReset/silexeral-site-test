@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <rect x="0" y="0" width="1024" height="1024" rx="224" fill="#DDD3C2"/>
+  <path d="M339 214 A369 338 0 1 0 685 214" fill="none" stroke="#ACAFB0" stroke-width="44" stroke-linecap="round"/>
+  <text x="512" y="525" text-anchor="middle" dominant-baseline="central" font-family="Georgia, 'Times New Roman', 'Times', 'DejaVu Serif', serif" font-weight="600" font-size="500" fill="#B5653F">S</text>
+</svg>

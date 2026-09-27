@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>silexeral</title>
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="SILEXERAL">
+<meta property="og:title" content="SILEXERAL — Raw stone, soft pearl">
+<meta property="og:description" content="Handmade sterling silver & pearl jewelry. Each piece exists only once.">
+<meta property="og:url" content="https://silexeral.com">
+<meta property="og:image" content="https://silexeral.com/images/atelier/slide-01.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://silexeral.com/images/atelier/slide-01.jpg">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&display=swap" rel="stylesheet">
+<style>
+:root{--lin:#EFE9DD;--oat:#DDD3C2;--card:#E7DECB;--clay:#A9764F;--terra:#B5653F;--khaki:#7C7259;--ink:#2E2A24;--muted:#5E5848;--pearl:#E7E0D2;}
+*{box-sizing:border-box;}
+body{margin:0;background:#D8CFBE;color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;}
+.serif{font-family:'Fraunces',Georgia,serif;}
+.reg{font-size:.5em;vertical-align:super;letter-spacing:normal;}
+.effort{display:none;align-items:center;gap:9px;margin:-6px 0 16px;}
+.effort .lab{font-size:11px;letter-spacing:1.5px;color:var(--khaki);text-transform:uppercase;}
+.effort .marks{display:flex;gap:3px;}
+.wrap{max-width:920px;margin:24px auto;background:var(--lin);border-radius:16px;overflow:hidden;border:0.5px solid rgba(46,42,36,.18);}
+header{display:flex;align-items:center;justify-content:space-between;padding:18px 26px;border-bottom:0.5px solid rgba(46,42,36,.14);gap:14px;flex-wrap:wrap;}
+nav{display:flex;gap:20px;font-size:12px;letter-spacing:1.5px;color:var(--khaki);}
+.ctrls{display:flex;align-items:center;gap:14px;}
+.seg{display:flex;gap:6px;font-size:12px;letter-spacing:.5px;}
+.seg button{background:none;border:none;cursor:pointer;color:var(--khaki);font:inherit;padding:2px 4px;}
+.seg button.on{color:var(--terra);text-decoration:underline;text-underline-offset:3px;}
+.cur{font:inherit;font-size:12px;color:var(--ink);background:var(--lin);border:0.5px solid #C2B49A;border-radius:16px;padding:5px 10px;}
+.hero{position:relative;min-height:380px;display:flex;align-items:center;overflow:hidden;}
+.hero .hero-e,.hero .hero-c{display:none;width:100%;}
+.hero.is-e{background-color:var(--card);}
+.hero.is-e .hero-e{display:block;}
+.hero.is-c{background:var(--card);}
+.hero.is-c .hero-c{display:block;}
+.slides{position:absolute;inset:0;z-index:0;}
+.slide{position:absolute;inset:0;background-size:cover;background-position:center 42%;opacity:0;transition:opacity 1.5s ease;}
+.slide.on{opacity:1;}
+.hero-fade{position:absolute;inset:0;z-index:1;pointer-events:none;background:
+  linear-gradient(90deg, var(--lin) 1%, color-mix(in srgb, var(--lin) 86%, transparent) 24%, color-mix(in srgb, var(--lin) 34%, transparent) 50%, color-mix(in srgb, var(--lin) 6%, transparent) 82%),
+  linear-gradient(180deg, var(--lin) 0%, color-mix(in srgb, var(--lin) 62%, transparent) 11%, color-mix(in srgb, var(--lin) 0%, transparent) 33%);}
+.hero .txt{position:relative;z-index:2;padding:48px 34px;max-width:480px;display:flex;flex-direction:column;justify-content:center;}
+.hero .cap{position:absolute;z-index:2;right:14px;bottom:12px;font-size:10px;letter-spacing:1.6px;color:var(--lin);background:rgba(46,42,36,.42);padding:4px 10px;border-radius:12px;}
+.hero-c{padding:46px 26px;}
+.cframe{max-width:520px;margin:0 auto;border:1px solid rgba(46,42,36,.26);border-radius:8px;padding:36px 24px;text-align:center;}
+.cwm{font-size:27px;letter-spacing:8px;color:var(--ink);}
+.crule{width:34px;height:1px;background:var(--clay);margin:16px auto;}
+.csub{font-size:12px;letter-spacing:2.4px;color:var(--muted);}
+.cbtn{display:inline-block;margin-top:20px;cursor:pointer;font-size:12px;letter-spacing:1px;color:var(--lin);background:var(--terra);padding:10px 22px;border-radius:22px;border:none;}
+.kick{font-size:11px;letter-spacing:2.5px;color:var(--clay);margin-bottom:14px;}
+.hero h1{font-size:34px;line-height:1.18;margin:0 0 14px;font-weight:500;}
+.hero p{font-size:14px;line-height:1.7;color:var(--muted);max-width:340px;margin:0 0 22px;}
+.btn{align-self:flex-start;cursor:pointer;font-size:13px;letter-spacing:1px;color:var(--lin);background:var(--terra);padding:12px 24px;border-radius:24px;border:none;}
+section{padding:30px 26px;}
+.sec-h{font-size:20px;font-weight:500;margin:0 0 4px;}
+.sec-s{font-size:12px;color:var(--khaki);margin:0 0 20px;}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;}
+.tile{cursor:pointer;}
+.tile .ph{aspect-ratio:1;border-radius:10px;background-size:cover;background-position:center;position:relative;overflow:hidden;}
+.tile .ph .phim{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;}
+.gal .thumbs div{position:relative;overflow:hidden;flex-shrink:0;}
+.gal .thumbs div img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;}
+.ribbon{position:absolute;top:13px;left:-30px;width:120px;transform:rotate(-45deg);text-align:center;background:var(--terra);color:var(--lin);font-size:10px;letter-spacing:2px;padding:4px 0;z-index:2;}
+.vbadge{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:22px;height:22px;border-radius:50%;background:rgba(46,42,36,.55);color:#fff;font-size:9px;display:flex;align-items:center;justify-content:center;z-index:2;pointer-events:none;padding-left:2px;}
+.vbadge.grid{width:44px;height:44px;font-size:16px;}
+.cats .newfilter{color:var(--terra);}
+.cats .newfilter.on{background:var(--terra);color:var(--lin);}
+.tile .nm{font-size:14px;margin-top:9px;}
+.tile .pr{font-size:13px;color:var(--muted);}
+.sold-ov{position:absolute;inset:0;background:rgba(46,42,36,.42);border-radius:10px;display:flex;align-items:center;justify-content:center;}
+.sold-ov span{color:var(--lin);font-size:13px;letter-spacing:3px;}
+.detail{display:grid;grid-template-columns:300px 1fr;gap:26px;border-top:0.5px solid rgba(46,42,36,.14);}
+.gal .main{aspect-ratio:3/4;border-radius:12px;background-size:cover;background-position:center;}
+.gal .thumbs{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px;}
+.gal .thumbs div{width:48px;height:48px;border-radius:6px;background-size:cover;background-position:center;cursor:pointer;border:2px solid transparent;}
+.gal .thumbs div.on{border-color:var(--terra);}
+.dname{font-size:25px;font-weight:500;margin:0 0 6px;}
+.dstory{font-size:13px;line-height:1.7;color:var(--muted);margin:0 0 16px;}
+.price{display:flex;align-items:baseline;gap:8px;margin-bottom:16px;}
+.price .v{font-size:26px;}
+.price .u{font-size:12px;color:var(--khaki);}
+.dsku{font-size:11px;color:var(--khaki);letter-spacing:1.5px;margin:-4px 0 12px;}
+.specs{width:100%;border-collapse:collapse;margin-bottom:18px;}
+.specs td{font-size:13px;padding:7px 0;border-bottom:0.5px solid rgba(46,42,36,.1);vertical-align:top;}
+.specs td:first-child{color:var(--khaki);width:38%;}
+.opt{background:var(--card);border-radius:10px;padding:12px 14px;margin-bottom:16px;}
+.opt label{display:flex;align-items:center;gap:10px;cursor:pointer;}
+.opt input[type=checkbox]{accent-color:var(--terra);width:16px;height:16px;}
+.opt .nm{flex:1;font-size:13px;}
+.opt .pr{font-size:13px;color:var(--terra);}
+.opt input[type=text]{font:inherit;font-size:13px;color:var(--ink);background:var(--lin);border:1px solid #C2B49A;border-radius:6px;padding:7px 9px;width:100%;margin-top:10px;display:none;}
+.buy{width:100%;text-align:center;cursor:pointer;font-size:14px;letter-spacing:1px;color:var(--lin);background:var(--terra);padding:13px;border-radius:26px;border:none;margin-bottom:10px;}
+.buy.dis{background:#B7AE9B;cursor:default;}
+.pp{display:flex;align-items:center;justify-content:center;gap:6px;font-size:11px;color:var(--khaki);margin-bottom:18px;}
+.pp i{width:6px;height:6px;border-radius:50%;background:var(--clay);display:inline-block;}
+.share-h{font-size:11px;letter-spacing:2px;color:var(--clay);margin-bottom:10px;}
+.share{display:flex;gap:8px;flex-wrap:wrap;}
+.share button{cursor:pointer;font:inherit;font-size:12px;color:var(--khaki);background:none;border:0.5px solid #C2B49A;border-radius:20px;padding:6px 13px;}
+.share button:hover{border-color:var(--terra);color:var(--terra);}
+footer{padding:18px 26px;border-top:0.5px solid rgba(46,42,36,.14);display:flex;align-items:center;justify-content:space-between;}
+footer .tag{font-size:11px;color:var(--khaki);letter-spacing:1px;}
+html{scroll-behavior:smooth;}
+nav a{color:inherit;text-decoration:none;}
+nav a:hover{color:var(--terra);}
+.about{display:grid;grid-template-columns:280px 1fr;gap:30px;border-top:0.5px solid rgba(46,42,36,.14);align-items:center;}
+.artist-pic{position:relative;overflow:hidden;aspect-ratio:3/4;border-radius:12px;background:#C9BBA3;background-size:cover;background-position:center;display:flex;align-items:center;justify-content:center;gap:7px;}
+.artist-pic .slide{background-position:center;}
+.about-line{font-size:28px;line-height:1.18;margin:10px 0 14px;font-weight:500;}
+.about-body{font-size:14px;line-height:1.8;color:var(--muted);margin:0 0 12px;max-width:440px;}
+.cform{max-width:520px;margin-top:18px;}
+.cf-row{display:flex;gap:10px;margin-bottom:10px;}
+.cform input,.cform textarea{font:inherit;font-size:14px;color:var(--ink);background:var(--lin);border:0.5px solid #C2B49A;border-radius:8px;padding:10px 12px;width:100%;box-sizing:border-box;}
+.cf-row input{flex:1;}
+.cform textarea{margin-bottom:12px;resize:vertical;}
+.cform input:focus,.cform textarea:focus{outline:none;border-color:var(--terra);}
+.cf-send{cursor:pointer;font-size:13px;letter-spacing:1px;color:var(--lin);background:var(--terra);border:none;border-radius:24px;padding:11px 28px;}
+.cf-send:disabled{opacity:.6;cursor:default;}
+.cf-status{font-size:13px;margin-top:12px;min-height:18px;}
+@media(max-width:760px){.cf-row{flex-direction:column;}}
+.shop{display:grid;grid-template-columns:165px 1fr;gap:24px;}
+.cats{display:flex;flex-direction:column;gap:2px;}
+.cats button{text-align:left;background:none;border:none;cursor:pointer;font:inherit;font-size:13px;color:var(--khaki);padding:7px 10px;border-radius:8px;display:flex;justify-content:space-between;gap:8px;}
+.cats button:hover{background:rgba(46,42,36,.06);}
+.cats button.on{background:var(--oat);color:var(--ink);}
+.cats .count{color:#9A9072;font-size:11px;}
+.tagrow{display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin-bottom:16px;}
+.tagtoggle{cursor:pointer;font:inherit;font-size:11px;letter-spacing:1px;color:var(--khaki);background:none;border:0.5px solid #C2B49A;border-radius:16px;padding:5px 12px;white-space:nowrap;}
+.tagtoggle:hover{border-color:var(--terra);color:var(--terra);}
+.tagtoggle.has{background:var(--terra);color:var(--lin);border-color:var(--terra);}
+.tags{display:none;flex-wrap:wrap;gap:6px;}
+.tags.open{display:flex;}
+.tags button{cursor:pointer;font:inherit;font-size:11px;letter-spacing:.3px;color:var(--khaki);background:none;border:0.5px solid #C2B49A;border-radius:16px;padding:3px 10px;}
+.tags button.on{background:var(--terra);color:var(--lin);border-color:var(--terra);}
+.sortsel{cursor:pointer;font:inherit;font-size:11px;letter-spacing:.4px;color:var(--khaki);background:none;border:0.5px solid #C2B49A;border-radius:16px;padding:5px 10px;}
+.sortsel:hover{border-color:var(--terra);color:var(--terra);}
+.nomatch{color:var(--khaki);font-size:13px;padding:10px 0;}
+@media(max-width:760px){.detail,.about{grid-template-columns:1fr;}.hero{min-height:300px;background-position:right 32%;}.hero .txt{max-width:none;}.grid{grid-template-columns:repeat(2,1fr);}.shop{grid-template-columns:1fr;}.cats{flex-direction:row;flex-wrap:wrap;}}
+/* Lightbox — full-resolution zoom on click */
+#lb{position:fixed;inset:0;background:rgba(22,17,11,.93);display:none;z-index:1000;align-items:center;justify-content:center;cursor:zoom-out;}
+#lb.on{display:flex;}
+#lb img{max-width:94vw;max-height:94vh;border-radius:8px;transition:transform .15s ease;transform-origin:center center;user-select:none;-webkit-user-drag:none;box-shadow:0 20px 60px rgba(0,0,0,.5);cursor:zoom-in;}
+#lb.zoom img{cursor:grab;}
+#lb.zoom img:active{cursor:grabbing;}
+#lb .lbx{position:absolute;top:14px;right:22px;font-size:34px;line-height:1;color:#fff;opacity:.85;cursor:pointer;font-family:serif;}
+#lb .lbx:hover{opacity:1;}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="serif" style="font-size:23px;letter-spacing:4px;">SILEXERAL<span class="reg">™</span></div>
+    <nav id="nav"></nav>
+    <div class="ctrls">
+      <div class="seg" id="langsw"></div>
+      <select class="cur" id="cur" onchange="setCur(this.value)"></select>
+    </div>
+  </header>
+
+  <div class="hero is-e" id="hero">
+    <div class="hero-e">
+      <div class="slides" id="slides"></div>
+      <div class="hero-fade"></div>
+      <div class="txt">
+        <div class="kick" id="h-kick"></div>
+        <h1 class="serif" id="h-title"></h1>
+        <p id="h-sub"></p>
+        <button class="btn serif" id="h-cta" onclick="document.getElementById('pieces').scrollIntoView({behavior:'smooth'})"></button>
+      </div>
+      <div class="cap" id="h-cap"></div>
+    </div>
+    <div class="hero-c">
+      <div class="cframe">
+        <div class="serif cwm">SILEXERAL<span class="reg">™</span></div>
+        <div class="crule"></div>
+        <div class="csub">RAW STONE · SOFT PEARL</div>
+        <button class="cbtn serif" onclick="document.getElementById('pieces').scrollIntoView({behavior:'smooth'})">Discover the pieces</button>
+      </div>
+    </div>
+  </div>
+
+  <section id="pieces">
+    <div class="serif sec-h" id="g-title"></div>
+    <div class="sec-s" id="g-sub"></div>
+    <div class="shop">
+      <aside class="cats" id="cats"></aside>
+      <div>
+        <div class="tagrow">
+          <button class="tagtoggle" id="tagtoggle" onclick="toggleTags()"></button>
+          <select class="sortsel" id="sortsel" onchange="setSort(this.value)" aria-label="Sort"></select>
+          <div class="tags" id="tagbar"></div>
+        </div>
+        <div class="grid" id="grid"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="detail">
+    <div class="gal">
+      <div class="main" id="d-main"></div>
+      <div class="thumbs" id="d-thumbs"></div>
+    </div>
+    <div>
+      <div class="kick" id="d-kick"></div>
+      <div class="serif dname" id="d-name"></div>
+      <div class="dsku" id="d-sku"></div>
+      <div class="dstory" id="d-story"></div>
+      <div class="price"><span class="serif v" id="d-price"></span><span class="u" id="d-unit"></span></div>
+      <div class="effort" id="d-effort"></div>
+      <table class="specs" id="d-specs"></table>
+      <div class="opt" id="d-opt">
+        <label><input type="checkbox" id="d-eng"><span class="nm" id="d-eng-nm"></span><span class="pr" id="d-eng-pr"></span></label>
+        <input type="text" id="d-eng-txt" maxlength="20">
+      </div>
+      <button class="buy serif" id="d-buy"></button>
+      <div id="d-paypal" style="margin-bottom:8px;"></div>
+      <div class="pp"><i></i><span id="d-pp"></span></div>
+      <div class="share-h" id="d-share-h"></div>
+      <div class="share" id="d-share"></div>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="artist-pic" id="artist-pic" style="background-image:url('/images/artist.webp')"></div>
+    <div>
+      <div class="kick">THE MAKER</div>
+      <div class="serif about-line" id="about-line">Shaped with strength<br>and tenderness</div>
+      <p class="about-body" id="about-body">SILEXERAL is the work of a single maker. Each piece is sterling silver, formed by hand. She also uses natural pearls, freshwater or seawater. Nothing is mass-produced: every necklace, choker and pair of earrings exists only once.</p>
+      <p class="about-body" id="about-body2">She works the way the material asks — the raw and the soft, held in the same hand.</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="kick">CONTACT</div>
+    <div class="serif sec-h">Get in touch</div>
+    <p class="about-body">For a question, a commission, or to claim a piece — send a message. Every order ships worldwide from the studio.</p>
+    <form id="cform" class="cform">
+      <input type="hidden" name="access_key" value="13933a9e-5354-4f6b-8544-3890aba4a460">
+      <input type="hidden" name="subject" value="New message — silexeral.com">
+      <input type="hidden" name="from_name" value="SILEXERAL website">
+      <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px">
+      <div class="cf-row">
+        <input name="name" placeholder="Your name" required>
+        <input type="email" name="email" placeholder="Your email" required>
+      </div>
+      <textarea name="message" rows="4" placeholder="Your message — a question, a commission, a piece you love" required></textarea>
+      <button type="submit" class="cf-send serif" id="cf-btn">Send</button>
+      <div class="cf-status" id="cf-status"></div>
+    </form>
+  </section>
+
+  <footer>
+    <span class="serif" style="font-size:14px;letter-spacing:3px;">SILEXERAL<span class="reg">™</span></span>
+    <span style="display:flex;gap:14px;align-items:center;flex-wrap:wrap;justify-content:flex-end">
+      <span class="tag" id="f-tag"></span>
+      <a class="tag" href="https://renaissanceproject.ca" target="_blank" rel="noopener" style="text-decoration:none">Renaissance Project ↗</a>
+    </span>
+  </footer>
+</div>
+
+<script>
+const SITE='https://silexeral.com';
+const T={
+  en:{nav:['PIECES','ABOUT','CONTACT'],kick:'SILVER & PEARL · HANDMADE',title:'Raw stone,<br>soft pearl',
+    sub:'Unique pieces, shaped one at a time. Each piece exists only once.',cta:'Discover the pieces',
+    gtitle:'Unique pieces',gsub:'Each piece exists only once',allCats:'All',newFilter:'✦ New',newRibbon:'NEW',noMatch:'No pieces match these filters.',sold:'SOLD',dkick:'PRODUCT PAGE',effortLabel:'Handwork',
+    ship:'· international shipping',engPh:'Your text (max 20 characters)',acquire:'Acquire',soldBtn:'Sold',
+    pp:'Secure payment via PayPal',share:'SHARE',copy:'Copy link',copied:'Link copied',tag:'The raw and the soft · © 2026',
+    cap:'YAN · IN THE STUDIO',tagsLabel:'Filter by tag',
+    sortLabel:'Sort',sortNew:'Newest',sortOld:'Oldest',sortPriceUp:'Price ↑',sortPriceDown:'Price ↓'},
+  fr:{nav:['PIÈCES','À PROPOS','CONTACT'],kick:'ARGENT & PERLE · FAIT MAIN',title:'La pierre brute,<br>la perle douce',
+    sub:'Des pièces uniques, façonnées une à une. Chaque bijou existe en un seul exemplaire.',cta:'Découvrir les pièces',
+    gtitle:'Pièces uniques',gsub:'Chaque pièce existe en un seul exemplaire',allCats:'Tout',newFilter:'✦ Nouveau',newRibbon:'NOUVEAU',noMatch:'Aucune pièce ne correspond.',sold:'VENDU',dkick:'PAGE PRODUIT',effortLabel:'Fait main',
+    ship:'· livraison internationale',engPh:'Votre texte (max. 20 caractères)',acquire:'Acquérir',soldBtn:'Vendu',
+    pp:'Paiement sécurisé via PayPal',share:'PARTAGER',copy:'Copier le lien',copied:'Lien copié',tag:'Le brut et le doux · © 2026',
+    cap:'YAN · À L\'ATELIER',tagsLabel:'Filtrer par tag',
+    sortLabel:'Trier',sortNew:'Plus récents',sortOld:'Plus anciens',sortPriceUp:'Prix ↑',sortPriceDown:'Prix ↓'}
+};
+
+let CAT=null, lang='en', cur='USD', detail=null, mainPhoto=null, SITECFG={};
+// Apply the app-published theme (site.json). Overrides the main palette vars;
+// leaves the derived card tones so the page stays cohesive.
+function applySiteTheme(s){
+  if(!s||!s.theme) return; var r=document.documentElement.style, th=s.theme;
+  if(th.bg){ r.setProperty('--lin',th.bg); }
+  if(th.accent){ r.setProperty('--terra',th.accent); r.setProperty('--clay',th.accent); }
+  if(th.text){ r.setProperty('--ink',th.text); }
+}
+// Per-language text overrides from site.json, applied in render().
+function siteText(key){ try{ var v=SITECFG.text&&SITECFG.text[key]&&SITECFG.text[key][lang]; return (v&&v.trim())?v:null; }catch(e){ return null; } }
+let activeCat='all', activeTags=new Set(), onlyNew=false, sortMode='new';
+
+// Absolute (leading slash) so images resolve against the site root regardless of
+// the current /piece/<slug> address-bar path (relative paths would break there).
+function img(slug,file){return '/images/'+encodeURIComponent(slug)+'/'+encodeURIComponent(file);}
+function imgThumb(slug,file){return img(slug,file.replace(/\.jpg$/i,'-thumb.jpg'));}
+function imgFull(slug,file){return img(slug,file.replace(/\.jpg$/i,'-full.jpg'));}
+function fmt(amount){return CAT.currency.symbols[cur]+amount;}
+function priceIn(map){ if(map[cur]!=null) return map[cur];
+  const usd=map.USD!=null?map.USD:Object.values(map)[0];
+  return Math.round(usd*(CAT.currency.rates[cur]||1)); }
+
+function setLang(l){lang=l;render();}
+function setCur(c){cur=c;render();}
+
+function shareLinks(p){
+  const url=SITE+'/piece/'+p.slug, text=p.name[lang]+' — SILEXERAL', media=SITE+img(p.slug,mainPhoto);
+  return [
+    {n:'Facebook',u:'https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(url)},
+    {n:'Pinterest',u:'https://pinterest.com/pin/create/button/?url='+encodeURIComponent(url)+'&media='+encodeURIComponent(media)+'&description='+encodeURIComponent(text)},
+    {n:'X',u:'https://twitter.com/intent/tweet?url='+encodeURIComponent(url)+'&text='+encodeURIComponent(text)},
+    {n:'WhatsApp',u:'https://wa.me/?text='+encodeURIComponent(text+' '+url)}
+  ];
+}
+
+function render(){
+  const t=T[lang], P=CAT.products;
+  document.documentElement.lang=lang;
+  document.querySelectorAll('#langsw button').forEach(b=>b.className=(b.dataset.l===lang)?'on':'');
+  document.getElementById('f-tag').textContent=(T[lang]||T.en).tag;
+  var navIds=['pieces','about','contact'];
+  document.getElementById('nav').innerHTML=t.nav.map(function(x,i){return '<a href="#'+navIds[i]+'">'+x+'</a>';}).join('');
+  document.getElementById('h-kick').textContent=siteText('heroKick')||t.kick;
+  document.getElementById('h-title').innerHTML=siteText('heroTitle')||t.title;
+  document.getElementById('h-sub').textContent=t.sub;
+  // About texts (site.json overrides the built-in defaults, per language)
+  var ah=siteText('aboutHeadline'); if(ah) document.getElementById('about-line').textContent=ah;
+  var ab=siteText('aboutBody');
+  if(ab){ document.getElementById('about-body').textContent=ab; var b2=document.getElementById('about-body2'); if(b2) b2.style.display='none'; }
+  document.getElementById('h-cta').textContent=t.cta;
+  document.getElementById('h-cap').textContent=siteText('heroCaption')||t.cap;
+  var qs=new URLSearchParams(location.search);
+  var hs=qs.get('hero');
+  document.getElementById('hero').className='hero is-'+(hs==='c'?'c':'e');
+  if(hs!=='c') initSlides();
+  document.getElementById('g-title').textContent=t.gtitle;
+  document.getElementById('g-sub').textContent=t.gsub;
+
+  buildShop();
+
+  const p=detail;
+  const sold=p.status==='sold';
+  document.getElementById('d-kick').textContent=t.dkick;
+  document.getElementById('d-name').textContent=p.name[lang];
+  document.getElementById('d-sku').textContent=p.sku?('Ref. '+p.sku):'';
+  document.getElementById('d-story').textContent=p.story[lang];
+  document.getElementById('d-unit').textContent=cur+' '+t.ship;
+  var dMain=document.getElementById('d-main');
+  var vid=p.videos&&p.videos[mainPhoto];
+  if(vid){
+    // Playable product video (poster = its still frame).
+    dMain.style.backgroundImage='none'; dMain.style.cursor='default'; dMain.onclick=null;
+    dMain.innerHTML='<video controls playsinline preload="metadata" poster="'+img(p.slug,mainPhoto)+'" src="'+img(p.slug,vid)+'" style="width:100%;height:100%;object-fit:contain;background:#000;border-radius:12px;display:block"></video>';
+  } else {
+    dMain.innerHTML='';
+    dMain.style.backgroundImage="url('"+img(p.slug,mainPhoto)+"')";
+    dMain.style.cursor='zoom-in';
+    dMain.onclick=function(){openLb(imgFull(p.slug,mainPhoto),img(p.slug,mainPhoto));};
+  }
+  document.getElementById('d-thumbs').innerHTML=p.photos.map(function(f){
+    var badge=(p.videos&&p.videos[f])?'<span class="vbadge">▶</span>':'';
+    return '<div class="'+(f===mainPhoto?'on':'')+'" onclick="setMain(\''+f.replace(/'/g,"")+'\')"><img loading="lazy" src="'+imgThumb(p.slug,f)+'" onerror="this.onerror=null;this.src=\''+img(p.slug,f)+'\'">'+badge+'</div>';
+  }).join('');
+  document.getElementById('d-specs').innerHTML=p.specs.map(s=>'<tr><td>'+s.label[lang]+'</td><td>'+s.value[lang]+'</td></tr>').join('');
+  var eff=document.getElementById('d-effort');
+  if(p.effort>0){ var hm=''; for(var k=1;k<=5;k++){hm+=hammer(k<=p.effort);} eff.innerHTML='<span class="lab">'+t.effortLabel+'</span><span class="marks">'+hm+'</span>'; eff.style.display='flex'; }
+  else { eff.innerHTML=''; eff.style.display='none'; }
+
+  const hasEng=p.options && p.options.length>0;
+  document.getElementById('d-opt').style.display=hasEng?'block':'none';
+  if(hasEng){
+    document.getElementById('d-eng-nm').textContent=p.options[0].label[lang];
+    document.getElementById('d-eng-pr').textContent='+ '+fmt(priceIn(p.options[0].price));
+    document.getElementById('d-eng-txt').placeholder=t.engPh;
+  }
+  document.getElementById('d-pp').textContent=t.pp;
+  document.getElementById('d-share-h').textContent=t.share;
+  document.getElementById('d-share').innerHTML=shareLinks(p).map(s=>'<button onclick="window.open(\''+s.u+'\',\'_blank\')">'+s.n+'</button>').join('')
+    +'<button onclick="copyLink()">'+t.copy+'</button>';
+
+  const buy=document.getElementById('d-buy');
+  buy.className='buy serif'+(sold?' dis':'');
+  updatePrice();
+}
+
+function hammer(on){return '<svg viewBox="0 0 16 16" width="15" height="15" aria-hidden="true"><path fill="'+(on?'#B5653F':'rgba(46,42,36,.18)')+'" d="M9.972 2.508a.5.5 0 0 0-.16-.556l-.178-.129a5 5 0 0 0-2.076-.783C6.215.862 4.504 1.229 2.84 3.133H1.786a.5.5 0 0 0-.354.147L.146 4.567a.5.5 0 0 0 0 .706l2.571 2.579a.5.5 0 0 0 .708 0l1.286-1.29a.5.5 0 0 0 .146-.353V5.57l8.387 8.873A.5.5 0 0 0 14 14.5l1.5-1.5a.5.5 0 0 0 .017-.689z"/></svg>';}
+function catOf(p){return (p.category&&p.category.trim())||'Other';}
+function buildShop(){
+  var t=T[lang];
+  // categories with counts
+  var counts={}; CAT.products.forEach(function(p){var c=catOf(p);counts[c]=(counts[c]||0)+1;});
+  var names=Object.keys(counts).sort();
+  var newCount=CAT.products.filter(function(p){return p.new;}).length;
+  var html='<button data-c="all" onclick="setCat(\'all\')">'+t.allCats+'<span class="count">'+CAT.products.length+'</span></button>';
+  if(newCount) html+='<button class="newfilter'+(onlyNew?' on':'')+'" onclick="toggleNew()">'+t.newFilter+'<span class="count">'+newCount+'</span></button>';
+  html+=names.map(function(c){return '<button data-c="'+c.replace(/"/g,'')+'" onclick="setCat(this.dataset.c)">'+c+'<span class="count">'+counts[c]+'</span></button>';}).join('');
+  var catsEl=document.getElementById('cats'); catsEl.innerHTML=html;
+  catsEl.querySelectorAll('button[data-c]').forEach(function(b){b.className=(b.dataset.c===activeCat)?'on':'';});
+  // tags
+  var tagSet=new Set(); CAT.products.forEach(function(p){(p.tags||[]).forEach(function(x){tagSet.add(x);});});
+  var tags=Array.from(tagSet).sort();
+  var tb=document.getElementById('tagbar');
+  tb.innerHTML=tags.map(function(tg){return '<button data-t="'+tg.replace(/"/g,'')+'" onclick="toggleTag(this.dataset.t)">#'+tg+'</button>';}).join('');
+  tb.querySelectorAll('button').forEach(function(b){b.className=activeTags.has(b.dataset.t)?'on':'';});
+  // The row also holds the sort picker, so keep it visible; only the tag toggle
+  // hides when there are no tags.
+  document.querySelector('.tagrow').style.display='flex';
+  document.getElementById('tagtoggle').style.display=tags.length?'inline-block':'none';
+  buildSortSel();
+  applyTagsOpen();
+  renderGrid();
+}
+var tagsOpen=false;
+function toggleTags(){ tagsOpen=!tagsOpen; applyTagsOpen(); }
+function applyTagsOpen(){
+  var open=tagsOpen||activeTags.size>0;
+  document.getElementById('tagbar').className='tags'+(open?' open':'');
+  var tt=document.getElementById('tagtoggle');
+  var t=T[lang];
+  var label=t.tagsLabel+(activeTags.size?(' · '+activeTags.size):'');
+  tt.textContent=label+(open?'  ▴':'  ▾');
+  tt.className='tagtoggle'+(activeTags.size?' has':'');
+}
+var SLIDES=['atelier/slide-01.jpg','atelier/slide-03.jpg','atelier/slide-05.jpg','atelier/slide-02.jpg','atelier/slide-04.jpg','atelier/slide-06.jpg'];
+function initSlides(){
+  var el=document.getElementById('slides'); if(!el) return;
+  el.innerHTML=SLIDES.map(function(s,i){return '<div class="slide'+(i===0?' on':'')+'" style="background-image:url(\'/images/'+s+'\')"></div>';}).join('');
+  var sl=el.querySelectorAll('.slide');
+  if(sl.length<2) return;
+  if(window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  var i=0;
+  setInterval(function(){ sl[i].classList.remove('on'); i=(i+1)%sl.length; sl[i].classList.add('on'); }, 5500);
+}
+// Artist (about) portrait from site.json: a single photo, or a crossfade
+// slideshow when several are published. Falls back to the built-in artist.webp.
+function initArtist(cfg){
+  var pic=document.getElementById('artist-pic'); if(!pic) return;
+  var arr=(cfg&&cfg.artist&&cfg.artist.length)?cfg.artist:null;
+  if(!arr) return;
+  if(arr.length===1){ pic.style.backgroundImage="url('/images/"+arr[0]+"')"; return; }
+  pic.style.backgroundImage='none';
+  pic.innerHTML=arr.map(function(s,i){return '<div class="slide'+(i===0?' on':'')+'" style="background-image:url(\'/images/'+s+'\')"></div>';}).join('');
+  if(window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  var sl=pic.querySelectorAll('.slide'), i=0;
+  setInterval(function(){ sl[i].classList.remove('on'); i=(i+1)%sl.length; sl[i].classList.add('on'); }, 5000);
+}
+function toggleNew(){ onlyNew=!onlyNew; buildShop(); }
+function passesFilter(p){
+  if(onlyNew && !p.new) return false;
+  if(activeCat!=='all' && catOf(p)!==activeCat) return false;
+  if(activeTags.size){
+    var pt=new Set((p.tags||[]).map(function(x){return x.toLowerCase();}));
+    var ok=true; activeTags.forEach(function(t){ if(!pt.has(t.toLowerCase())) ok=false; });
+    if(!ok) return false;
+  }
+  return true;
+}
+// Recency key for "newest first": the piece's publish date when present, else
+// the date/sequence encoded in the SKU (SLX-XX-YYMM-NN). Both map to a
+// comparable YYYYMMDD-scale number so dated and legacy items sort together.
+function recency(p){
+  if(p.date){ var d=new Date(p.date); if(!isNaN(d.getTime())) return d.getFullYear()*10000+(d.getMonth()+1)*100+d.getDate(); }
+  var m=(p.sku||'').match(/(\d{2})(\d{2})-(\d+)/);
+  if(m) return (2000+ +m[1])*10000+(+m[2])*100+Math.min(+m[3],99);
+  return 0;
+}
+function sortComparator(){
+  switch(sortMode){
+    case 'old':       return function(a,b){ return recency(a.p)-recency(b.p) || a.i-b.i; };
+    case 'priceUp':   return function(a,b){ return priceIn(a.p.price)-priceIn(b.p.price) || a.i-b.i; };
+    case 'priceDown': return function(a,b){ return priceIn(b.p.price)-priceIn(a.p.price) || a.i-b.i; };
+    default:          return function(a,b){ return recency(b.p)-recency(a.p) || a.i-b.i; }; // newest
+  }
+}
+function buildSortSel(){
+  var t=T[lang], sel=document.getElementById('sortsel'); if(!sel) return;
+  var opts=[['new',t.sortNew],['old',t.sortOld],['priceUp',t.sortPriceUp],['priceDown',t.sortPriceDown]];
+  sel.innerHTML=opts.map(function(o){return '<option value="'+o[0]+'"'+(o[0]===sortMode?' selected':'')+'>'+o[1]+'</option>';}).join('');
+}
+function setSort(v){ sortMode=v; renderGrid(); }
+function renderGrid(){
+  var t=T[lang];
+  var list=CAT.products.map(function(p,i){return {p:p,i:i};}).filter(function(x){return passesFilter(x.p);});
+  list.sort(sortComparator());
+  var html=list.map(function(x){
+    var p=x.p;
+    var sold=p.status==='sold';
+    var ov=sold?'<div class="sold-ov"><span class="serif">'+t.sold+'</span></div>':'';
+    var rib=(p.new&&!sold)?'<div class="ribbon serif">'+t.newRibbon+'</div>':'';
+    var pr=sold?t.soldBtn:fmt(priceIn(p.price));
+    var dim=sold?'color:#9A9072;':'';
+    var vb=(p.videos&&p.photos[0]&&p.videos[p.photos[0]])?'<span class="vbadge grid">▶</span>':'';
+    return '<div class="tile" onclick="openDetail('+x.i+')"><div class="ph"><img class="phim" loading="lazy" src="'+imgThumb(p.slug,p.photos[0])+'" onerror="this.onerror=null;this.src=\''+img(p.slug,p.photos[0])+'\'">'+ov+rib+vb+'</div>'
+      +'<div class="serif nm" style="'+dim+'">'+p.name[lang]+'</div><div class="pr" style="'+dim+'">'+pr+'</div></div>';
+  }).join('');
+  document.getElementById('grid').innerHTML=html||'<div class="nomatch">'+t.noMatch+'</div>';
+}
+function setCat(c){activeCat=c;buildShop();}
+function toggleTag(t){ if(activeTags.has(t)) activeTags.delete(t); else activeTags.add(t); buildShop(); }
+
+function setMain(f){mainPhoto=f;render();}
+// hist: 'push' (a click, default) | 'replace' (initial ?piece load) | 'none' (back/forward)
+function openDetail(i,hist){
+  detail=CAT.products[i];mainPhoto=detail.photos[0];render();
+  window.scrollTo({top:document.querySelector('.detail').offsetTop-20,behavior:'smooth'});
+  if(hist!=='none'){
+    try{ history[hist==='replace'?'replaceState':'pushState']({piece:detail.slug},'','/piece/'+encodeURIComponent(detail.slug)); }catch(e){}
+  }
+}
+function pieceSlugFromLocation(){
+  var m=location.pathname.match(/^\/piece\/([^\/]+)\/?$/);
+  return m?decodeURIComponent(m[1]):new URLSearchParams(location.search).get('piece');
+}
+// Back/forward: reflect the URL without pushing a new entry.
+window.addEventListener('popstate',function(){
+  if(!CAT) return;
+  var slug=pieceSlugFromLocation();
+  if(slug){ var i=CAT.products.findIndex(function(p){return p.slug===slug;}); if(i>=0){ openDetail(i,'none'); return; } }
+  window.scrollTo({top:0,behavior:'smooth'});
+});
+
+function updatePrice(){
+  const p=detail, t=T[lang], sold=p.status==='sold';
+  const eng=document.getElementById('d-eng'), txt=document.getElementById('d-eng-txt');
+  const hasEng=p.options && p.options.length>0;
+  const on=hasEng&&eng.checked;
+  txt.style.display=on?'block':'none';
+  const total=priceIn(p.price)+(on?priceIn(p.options[0].price):0);
+  document.getElementById('d-price').textContent=fmt(total);
+  document.getElementById('d-buy').textContent=sold?t.soldBtn:(t.acquire+' — '+fmt(total));
+  // When PayPal is configured and the piece is available, the PayPal button is
+  // the call to action; otherwise the label button stays as a fallback.
+  document.getElementById('d-buy').style.display=(ppClientId() && !sold)?'none':'block';
+  renderPayPal(total);
+}
+function copyLink(){navigator.clipboard&&navigator.clipboard.writeText(SITE+'/piece/'+detail.slug);alert(T[lang].copied);}
+document.addEventListener('change',e=>{if(e.target.id==='d-eng')updatePrice();});
+
+// ─── PayPal ─────────────────────────────────────────────
+// Paste the PayPal Client ID between the quotes to enable checkout.
+// Sandbox ID = test mode (fake money) · Live ID = real payments.
+// PayPal Client ID resolves from (1) a ?paypal=… URL param for local sandbox
+// testing, then (2) catalog.json payment.paypalClientId (set in the app for
+// production). Empty → the "Acquire" label fallback, no checkout.
+function ppClientId(){
+  var u=new URLSearchParams(location.search).get('paypal');
+  if(u){ try{ sessionStorage.setItem('pp',u); }catch(e){} return u; }
+  try{ var s=sessionStorage.getItem('pp'); if(s) return s; }catch(e){}
+  return (CAT && CAT.payment && CAT.payment.paypalClientId) || '';
+}
+
+let _ppCur=null;
+function loadPayPal(currency){
+  if(!ppClientId()) return Promise.reject('no-client-id');
+  if(window.paypal && _ppCur===currency) return Promise.resolve();
+  return new Promise(function(resolve,reject){
+    var old=document.getElementById('pp-sdk'); if(old) old.remove();
+    if(window.paypal){ try{ delete window.paypal; }catch(e){ window.paypal=undefined; } }
+    var s=document.createElement('script'); s.id='pp-sdk';
+    s.src='https://www.paypal.com/sdk/js?client-id='+encodeURIComponent(ppClientId())+'&currency='+currency+'&intent=capture&components=buttons';
+    s.onload=function(){ _ppCur=currency; resolve(); };
+    s.onerror=function(){ reject('sdk-load'); };
+    document.head.appendChild(s);
+  });
+}
+function renderPayPal(total){
+  var el=document.getElementById('d-paypal'); if(!el) return; el.innerHTML='';
+  if(!ppClientId() || !detail || detail.status==='sold') return;
+  var product=detail, currency=cur, ln=lang;
+  loadPayPal(currency).then(function(){
+    if(detail!==product) return; // user switched product while the SDK loaded
+    var eng=document.getElementById('d-eng');
+    var on=product.options&&product.options.length>0&&eng&&eng.checked;
+    var engTxt=(document.getElementById('d-eng-txt')||{}).value||'';
+    var desc=product.name[ln]+((on&&engTxt)?(' — engraving: '+engTxt):'');
+    paypal.Buttons({
+      style:{shape:'pill',color:'black',label:'pay',height:42},
+      createOrder:function(d,actions){return actions.order.create({purchase_units:[{
+        amount:{value:String(total),currency_code:currency},
+        description:desc.slice(0,127)
+      }]});},
+      onApprove:function(d,actions){return actions.order.capture().then(function(){
+        el.innerHTML='<div style="color:#3B6D11;font-size:13px;padding:8px 0">Thank you — your order is confirmed. We will email you shortly.</div>';
+      });},
+      onError:function(){ el.innerHTML='<div style="color:#993C1D;font-size:13px;padding:6px 0">Payment error — please try again.</div>'; }
+    }).render('#d-paypal').catch(function(){});
+  }).catch(function(){ /* not configured or SDK failed — label button stays */ });
+}
+
+function pickLang(list){var n=(navigator.language||'en').slice(0,2).toLowerCase();return (list.indexOf(n)>=0&&T[n])?n:'en';}
+function buildLangSwitcher(list){
+  var el=document.getElementById('langsw');
+  var avail=list.filter(function(l){return T[l];});
+  if(avail.length<2){el.style.display='none';return;}
+  el.innerHTML=avail.map(function(l){return '<button data-l="'+l+'" onclick="setLang(\''+l+'\')">'+l.toUpperCase()+'</button>';}).join('');
+}
+
+var cform=document.getElementById('cform');
+if(cform){cform.addEventListener('submit',async function(e){
+  e.preventDefault();
+  var st=document.getElementById('cf-status'), btn=document.getElementById('cf-btn');
+  st.style.color='var(--khaki)'; st.textContent='Sending…'; btn.disabled=true;
+  var data=Object.fromEntries(new FormData(cform).entries());
+  try{
+    var r=await fetch('https://api.web3forms.com/submit',{method:'POST',headers:{'content-type':'application/json',accept:'application/json'},body:JSON.stringify(data)});
+    var j=await r.json();
+    if(j.success){cform.reset();st.style.color='#3B6D11';st.textContent='Thank you — your message has been sent.';}
+    else{st.style.color='#993C1D';st.textContent=(j.message||'Something went wrong. Please try again.');}
+  }catch(err){st.style.color='#993C1D';st.textContent='Network error. Please try again.';}
+  btn.disabled=false;
+});}
+
+// Currency is a SITE concern — international web buyers, NOT the China platforms
+// (Taobao/Rednote handle ¥ separately). Prices are budgeted in USD; non-USD gets a
+// SAFETY MARGIN so PayPal's FX spread (~3-4%) + intraday drift don't erode the USD
+// value we actually want to receive. USD itself = no margin (it's the base).
+const FX_DISPLAY=['USD','EUR','GBP','CAD','AUD'];
+const FX_SYMBOLS={USD:'$',EUR:'€',GBP:'£',CAD:'C$',AUD:'A$'};
+const FX_MARGIN_DEFAULT=0.04;  // fallback only — the live value comes from the app's Business tab (catalog.json → currency.fxMargin)
+const FX_STATIC={USD:1,EUR:0.877,GBP:0.757,CAD:1.418,AUD:1.449}; // fallback if live fetch fails
+
+// Live USD→X rates for the browser: frankfurter (ECB, CORS *) → jsDelivr → null.
+function fetchLiveFX(){
+  const want=FX_DISPLAY.filter(c=>c!=='USD');
+  return fetch('https://api.frankfurter.dev/v1/latest?from=USD&to='+want.join(','))
+    .then(r=>r.ok?r.json():Promise.reject()).then(j=>Object.assign({USD:1},j.rates))
+    .catch(()=>fetch('https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@latest/v1/currencies/usd.json')
+      .then(r=>r.ok?r.json():Promise.reject())
+      .then(j=>{const o={USD:1};want.forEach(c=>{const v=j.usd[c.toLowerCase()];if(v!=null)o[c]=v;});return o;}))
+    .catch(()=>null);
+}
+// Build CAT.currency from live (or static) rates, with the safety margin baked in.
+function applyCurrency(){
+  // Margin set in the app's Business tab, published into catalog.json; fallback if absent.
+  const margin=(CAT.currency&&CAT.currency.fxMargin!=null)?CAT.currency.fxMargin:FX_MARGIN_DEFAULT;
+  return fetchLiveFX().then(live=>{
+    const market=live||FX_STATIC, rates={};
+    FX_DISPLAY.forEach(c=>{const m=(market[c]!=null)?market[c]:FX_STATIC[c];
+      rates[c]=(c==='USD')?1:Math.round(m*(1+margin)*1e4)/1e4;});
+    CAT.currency={base:'USD',display:FX_DISPLAY,symbols:FX_SYMBOLS,rates:rates};
+    cur=CAT.currency.base;
+    document.getElementById('cur').innerHTML=FX_DISPLAY.map(c=>'<option value="'+c+'">'+c+'</option>').join('');
+    document.getElementById('cur').value=cur;
+  });
+}
+
+Promise.all([
+  fetch('catalog.json').then(r=>r.json()),
+  fetch('site.json').then(function(r){return r.ok?r.json():null;}).catch(function(){return null;})
+]).then(function(res){
+  var data=res[0]; SITECFG=res[1]||{};
+  applySiteTheme(SITECFG);
+  if(SITECFG.hero&&SITECFG.hero.length) SLIDES=SITECFG.hero;
+  initArtist(SITECFG);
+  CAT=data; detail=data.products[0]; mainPhoto=detail.photos[0];
+  lang=pickLang(data.languages||['en']);
+  buildLangSwitcher(data.languages||['en']);
+  applyCurrency().then(function(){ render(); openPieceFromURL(); });
+}).catch(e=>{document.body.innerHTML='<p style="font-family:sans-serif;padding:40px">catalog.json introuvable — servez le dossier via localhost.</p>';});
+// A shared /piece/<slug> link redirects here as /?piece=<slug>; open that piece
+// and clean the address bar to the pretty /piece/<slug> form (no extra history).
+function openPieceFromURL(){
+  var slug=pieceSlugFromLocation(); if(!slug||!CAT) return;
+  var i=CAT.products.findIndex(function(p){return p.slug===slug;});
+  if(i>=0) openDetail(i,'replace');
+}
+// ---- Lightbox: full-res view with click-to-zoom + drag-to-pan ----
+var lbZoom=false, lbDrag=false, lbMoved=false, lbSX=0, lbSY=0, lbPX=0, lbPY=0, lbDownX=0, lbDownY=0;
+function openLb(src,fallback){
+  var lb=document.getElementById('lb'), im=document.getElementById('lb-img');
+  im.onerror=function(){im.onerror=null;if(fallback)im.src=fallback;};   // -full missing → display image
+  im.src=src; lbZoom=false; lbPX=lbPY=0; im.style.transform='scale(1)';
+  lb.classList.remove('zoom'); lb.classList.add('on'); document.body.style.overflow='hidden';
+}
+function closeLb(){document.getElementById('lb').classList.remove('on');document.body.style.overflow='';}
+window.addEventListener('DOMContentLoaded',function(){
+  var lb=document.getElementById('lb'), im=document.getElementById('lb-img');
+  function apply(){im.style.transform=lbZoom?('scale(2) translate('+(lbPX/2)+'px,'+(lbPY/2)+'px)'):'scale(1)';}
+  im.addEventListener('click',function(e){
+    e.stopPropagation();
+    if(lbMoved){lbMoved=false;return;}        // a pan just ended — keep the zoom
+    lbZoom=!lbZoom;lbPX=lbPY=0;lb.classList.toggle('zoom',lbZoom);apply();
+  });
+  im.addEventListener('mousedown',function(e){
+    e.preventDefault(); lbMoved=false; lbDownX=e.clientX; lbDownY=e.clientY;
+    if(!lbZoom)return;                          // only pan when zoomed
+    lbDrag=true;lbSX=e.clientX-lbPX;lbSY=e.clientY-lbPY;
+  });
+  window.addEventListener('mousemove',function(e){
+    if(!lbDrag)return;
+    if(Math.abs(e.clientX-lbDownX)>3||Math.abs(e.clientY-lbDownY)>3) lbMoved=true;  // total move from down
+    lbPX=e.clientX-lbSX;lbPY=e.clientY-lbSY;apply();
+  });
+  window.addEventListener('mouseup',function(){lbDrag=false;});
+  lb.addEventListener('click',closeLb);
+  document.addEventListener('keydown',function(e){if(e.key==='Escape')closeLb();});
+});
+</script>
+<div id="lb"><span class="lbx" onclick="closeLb()">×</span><img id="lb-img" alt=""></div>
+</body>
+</html>
