@@ -24,7 +24,7 @@
       "USD" : "$"
     }
   },
-  "generated" : "2026-09-27",
+  "generated" : "2026-09-28",
   "languages" : [
     "en"
   ],
@@ -2884,7 +2884,7 @@
       "category" : "Necklace",
       "effort" : 4,
       "name" : {
-        "en" : "Silver chain with Australian blue pearl"
+        "en" : "Silver chain with Australian blue pearl."
       },
       "new" : true,
       "options" : [
