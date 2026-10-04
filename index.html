@@ -150,6 +150,10 @@ nav a:hover{color:var(--terra);}
 #lb.zoom img{cursor:grab;}
 #lb.zoom img:active{cursor:grabbing;}
 #lb .lbx{position:absolute;top:14px;right:22px;font-size:34px;line-height:1;color:#fff;opacity:.85;cursor:pointer;font-family:serif;}
+#reelLb{position:fixed;inset:0;background:rgba(22,17,11,.95);display:none;z-index:1001;align-items:center;justify-content:center;}
+#reelLb.on{display:flex;}
+#reelLb video{max-width:94vw;max-height:94vh;aspect-ratio:9/16;height:94vh;width:auto;border-radius:12px;background:#000;box-shadow:0 20px 60px rgba(0,0,0,.5);}
+#reelLb .lbx{position:absolute;top:14px;right:22px;font-size:34px;line-height:1;color:#fff;opacity:.85;cursor:pointer;font-family:serif;z-index:1002;}
 #lb .lbx:hover{opacity:1;}
 </style>
 </head>
@@ -274,14 +278,14 @@ const T={
     ship:'· international shipping',engPh:'Your text (max 20 characters)',acquire:'Acquire',soldBtn:'Sold',
     pp:'Secure payment via PayPal',share:'SHARE',copy:'Copy link',copied:'Link copied',tag:'The raw and the soft · © 2026',
     cap:'YAN · IN THE STUDIO',tagsLabel:'Filter by tag',
-    sortLabel:'Sort',sortNew:'Newest',sortOld:'Oldest',sortPriceUp:'Price ↑',sortPriceDown:'Price ↓'},
+    sortLabel:'Sort',sortNew:'Newest',sortOld:'Oldest',sortPriceUp:'Price ↑',sortPriceDown:'Price ↓',reel:'▶ Watch reel'},
   fr:{nav:['PIÈCES','À PROPOS','CONTACT'],kick:'ARGENT & PERLE · FAIT MAIN',title:'La pierre brute,<br>la perle douce',
     sub:'Des pièces uniques, façonnées une à une. Chaque bijou existe en un seul exemplaire.',cta:'Découvrir les pièces',
     gtitle:'Pièces uniques',gsub:'Chaque pièce existe en un seul exemplaire',allCats:'Tout',newFilter:'✦ Nouveau',newRibbon:'NOUVEAU',noMatch:'Aucune pièce ne correspond.',sold:'VENDU',dkick:'PAGE PRODUIT',effortLabel:'Fait main',
     ship:'· livraison internationale',engPh:'Votre texte (max. 20 caractères)',acquire:'Acquérir',soldBtn:'Vendu',
     pp:'Paiement sécurisé via PayPal',share:'PARTAGER',copy:'Copier le lien',copied:'Lien copié',tag:'Le brut et le doux · © 2026',
     cap:'YAN · À L\'ATELIER',tagsLabel:'Filtrer par tag',
-    sortLabel:'Trier',sortNew:'Plus récents',sortOld:'Plus anciens',sortPriceUp:'Prix ↑',sortPriceDown:'Prix ↓'}
+    sortLabel:'Trier',sortNew:'Plus récents',sortOld:'Plus anciens',sortPriceUp:'Prix ↑',sortPriceDown:'Prix ↓',reel:'▶ Voir la vidéo'}
 };
 
 let CAT=null, lang='en', cur='USD', detail=null, mainPhoto=null, SITECFG={};
@@ -382,7 +386,11 @@ function render(){
   }
   document.getElementById('d-pp').textContent=t.pp;
   document.getElementById('d-share-h').textContent=t.share;
-  document.getElementById('d-share').innerHTML=shareLinks(p).map(s=>'<button onclick="window.open(\''+s.u+'\',\'_blank\')">'+s.n+'</button>').join('')
+  // The reel flagged for the web (narrated 9:16 short), if any.
+  var webReel=(p.reels||[]).filter(function(r){return r.web;})[0];
+  var reelBtn=webReel?'<button onclick="openReel(\'/'+webReel.file+'\')">'+t.reel+'</button>':'';
+  document.getElementById('d-share').innerHTML=reelBtn
+    +shareLinks(p).map(s=>'<button onclick="window.open(\''+s.u+'\',\'_blank\')">'+s.n+'</button>').join('')
     +'<button onclick="copyLink()">'+t.copy+'</button>';
 
   const buy=document.getElementById('d-buy');
@@ -680,6 +688,12 @@ function openLb(src,fallback){
   lb.classList.remove('zoom'); lb.classList.add('on'); document.body.style.overflow='hidden';
 }
 function closeLb(){document.getElementById('lb').classList.remove('on');document.body.style.overflow='';}
+function openReel(src){
+  var rl=document.getElementById('reelLb'), v=document.getElementById('reel-v');
+  v.src=src; rl.classList.add('on'); document.body.style.overflow='hidden';
+  var pr=v.play(); if(pr&&pr.catch)pr.catch(function(){});
+}
+function closeReel(){var v=document.getElementById('reel-v');v.pause();v.removeAttribute('src');v.load();document.getElementById('reelLb').classList.remove('on');document.body.style.overflow='';}
 window.addEventListener('DOMContentLoaded',function(){
   var lb=document.getElementById('lb'), im=document.getElementById('lb-img');
   function apply(){im.style.transform=lbZoom?('scale(2) translate('+(lbPX/2)+'px,'+(lbPY/2)+'px)'):'scale(1)';}
@@ -704,5 +718,6 @@ window.addEventListener('DOMContentLoaded',function(){
 });
 </script>
 <div id="lb"><span class="lbx" onclick="closeLb()">×</span><img id="lb-img" alt=""></div>
+<div id="reelLb" onclick="closeReel()"><span class="lbx" onclick="closeReel()">×</span><video id="reel-v" controls playsinline loop onclick="event.stopPropagation()"></video></div>
 </body>
 </html>
