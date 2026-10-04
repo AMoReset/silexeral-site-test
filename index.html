@@ -150,10 +150,7 @@ nav a:hover{color:var(--terra);}
 #lb.zoom img{cursor:grab;}
 #lb.zoom img:active{cursor:grabbing;}
 #lb .lbx{position:absolute;top:14px;right:22px;font-size:34px;line-height:1;color:#fff;opacity:.85;cursor:pointer;font-family:serif;}
-#reelLb{position:fixed;inset:0;background:rgba(22,17,11,.95);display:none;z-index:1001;align-items:center;justify-content:center;}
-#reelLb.on{display:flex;}
-#reelLb video{max-width:94vw;max-height:94vh;aspect-ratio:9/16;height:94vh;width:auto;border-radius:12px;background:#000;box-shadow:0 20px 60px rgba(0,0,0,.5);}
-#reelLb .lbx{position:absolute;top:14px;right:22px;font-size:34px;line-height:1;color:#fff;opacity:.85;cursor:pointer;font-family:serif;z-index:1002;}
+.reelthumb .vbadge{background:rgba(181,101,63,.92);}
 #lb .lbx:hover{opacity:1;}
 </style>
 </head>
@@ -357,8 +354,15 @@ function render(){
   document.getElementById('d-story').textContent=p.story[lang];
   document.getElementById('d-unit').textContent=cur+' '+t.ship;
   var dMain=document.getElementById('d-main');
+  // The reel flagged for the web (narrated 9:16 short), if any — shown as the first
+  // gallery item and played in place, uncropped (contain), not through the 3:4
+  // product-video pipeline.
+  var webReel=(p.reels||[]).filter(function(r){return r.web;})[0];
   var vid=p.videos&&p.videos[mainPhoto];
-  if(vid){
+  if(mainPhoto==='__reel__'&&webReel){
+    dMain.style.backgroundImage='none'; dMain.style.cursor='default'; dMain.onclick=null;
+    dMain.innerHTML='<video controls playsinline loop preload="metadata" src="/'+webReel.file+'" style="width:100%;height:100%;object-fit:contain;background:#000;border-radius:12px;display:block"></video>';
+  } else if(vid){
     // Playable product video (poster = its still frame).
     dMain.style.backgroundImage='none'; dMain.style.cursor='default'; dMain.onclick=null;
     dMain.innerHTML='<video controls playsinline preload="metadata" poster="'+img(p.slug,mainPhoto)+'" src="'+img(p.slug,vid)+'" style="width:100%;height:100%;object-fit:contain;background:#000;border-radius:12px;display:block"></video>';
@@ -368,7 +372,9 @@ function render(){
     dMain.style.cursor='zoom-in';
     dMain.onclick=function(){openLb(imgFull(p.slug,mainPhoto),img(p.slug,mainPhoto));};
   }
-  document.getElementById('d-thumbs').innerHTML=p.photos.map(function(f){
+  // Reel thumbnail first (uses the cover still + a ▶ badge), then the photos.
+  var reelThumb=webReel?('<div class="reelthumb '+(mainPhoto==='__reel__'?'on':'')+'" onclick="setMain(\'__reel__\')"><img loading="lazy" src="'+imgThumb(p.slug,p.photos[0])+'" onerror="this.onerror=null;this.src=\''+img(p.slug,p.photos[0])+'\'"><span class="vbadge">▶</span></div>'):'';
+  document.getElementById('d-thumbs').innerHTML=reelThumb+p.photos.map(function(f){
     var badge=(p.videos&&p.videos[f])?'<span class="vbadge">▶</span>':'';
     return '<div class="'+(f===mainPhoto?'on':'')+'" onclick="setMain(\''+f.replace(/'/g,"")+'\')"><img loading="lazy" src="'+imgThumb(p.slug,f)+'" onerror="this.onerror=null;this.src=\''+img(p.slug,f)+'\'">'+badge+'</div>';
   }).join('');
@@ -386,11 +392,7 @@ function render(){
   }
   document.getElementById('d-pp').textContent=t.pp;
   document.getElementById('d-share-h').textContent=t.share;
-  // The reel flagged for the web (narrated 9:16 short), if any.
-  var webReel=(p.reels||[]).filter(function(r){return r.web;})[0];
-  var reelBtn=webReel?'<button onclick="openReel(\'/'+webReel.file+'\')">'+t.reel+'</button>':'';
-  document.getElementById('d-share').innerHTML=reelBtn
-    +shareLinks(p).map(s=>'<button onclick="window.open(\''+s.u+'\',\'_blank\')">'+s.n+'</button>').join('')
+  document.getElementById('d-share').innerHTML=shareLinks(p).map(s=>'<button onclick="window.open(\''+s.u+'\',\'_blank\')">'+s.n+'</button>').join('')
     +'<button onclick="copyLink()">'+t.copy+'</button>';
 
   const buy=document.getElementById('d-buy');
@@ -688,12 +690,6 @@ function openLb(src,fallback){
   lb.classList.remove('zoom'); lb.classList.add('on'); document.body.style.overflow='hidden';
 }
 function closeLb(){document.getElementById('lb').classList.remove('on');document.body.style.overflow='';}
-function openReel(src){
-  var rl=document.getElementById('reelLb'), v=document.getElementById('reel-v');
-  v.src=src; rl.classList.add('on'); document.body.style.overflow='hidden';
-  var pr=v.play(); if(pr&&pr.catch)pr.catch(function(){});
-}
-function closeReel(){var v=document.getElementById('reel-v');v.pause();v.removeAttribute('src');v.load();document.getElementById('reelLb').classList.remove('on');document.body.style.overflow='';}
 window.addEventListener('DOMContentLoaded',function(){
   var lb=document.getElementById('lb'), im=document.getElementById('lb-img');
   function apply(){im.style.transform=lbZoom?('scale(2) translate('+(lbPX/2)+'px,'+(lbPY/2)+'px)'):'scale(1)';}
@@ -718,6 +714,5 @@ window.addEventListener('DOMContentLoaded',function(){
 });
 </script>
 <div id="lb"><span class="lbx" onclick="closeLb()">×</span><img id="lb-img" alt=""></div>
-<div id="reelLb" onclick="closeReel()"><span class="lbx" onclick="closeReel()">×</span><video id="reel-v" controls playsinline loop onclick="event.stopPropagation()"></video></div>
 </body>
 </html>
